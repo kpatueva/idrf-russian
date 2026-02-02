@@ -10,6 +10,7 @@ import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
 import logo24TTLNew from './assets/24ttl_logo_new.png';
+import venuePhoto from './assets/sok-rybakov-tauer.png';
 
 function App() {
   return (
@@ -502,12 +503,12 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-300 rounded-3xl overflow-hidden h-96 flex items-center justify-center border-2 border-gray-200">
-              <div className="text-center p-8">
-                <MapPin className="w-16 h-16 text-gray-500 mx-auto mb-4" />
-                <p className="text-gray-600 text-lg font-bold">SOK Rybakov Tower</p>
-                <p className="text-gray-500 mt-2">Москва</p>
-              </div>
+            <div className="rounded-3xl overflow-hidden h-96 border-2 border-gray-200">
+              <img
+                src={venuePhoto}
+                alt="SOK Rybakov Tower"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
