@@ -401,10 +401,10 @@ function App() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <SpeakerCard
-                photo={speaker2Photo}
-                name="Александр Дмитриев"
-                position="Head of E-Com"
-                company="Polaris"
+                photo={speaker5Photo}
+                name="Михаил Пономарев"
+                position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
+                company="Giper.fm"
               />
               <SpeakerCard
                 photo={speaker1Photo}
@@ -413,17 +413,17 @@ function App() {
                 company="Билайн"
               />
               <SpeakerCard
+                photo={speaker2Photo}
+                name="Александр Дмитриев"
+                position="Head of E-Com"
+                company="Polaris"
+              />
+              <SpeakerCard
                 photo={speaker3Photo}
                 name="Григорий Черняев"
                 position="CEO CIS"
                 company="24TTL"
                 logo={logo24TTL}
-              />
-              <SpeakerCard
-                photo={speaker5Photo}
-                name="Михаил Пономарев"
-                position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
-                company="Giper.fm"
               />
             </div>
 
