@@ -6,6 +6,7 @@ import speaker1Photo from './assets/photo58.jpeg';
 import speaker2Photo from './assets/photo07.jpeg';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker4Photo from './assets/2026-01-29_07.20.54.jpg';
+import speaker5Photo from './assets/scshot_02_13_56_21.png';
 import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
@@ -425,6 +426,12 @@ function App() {
                 position="Product Lead"
                 company="24TTL"
                 logo={logo24TTL}
+              />
+              <SpeakerCard
+                photo={speaker5Photo}
+                name="Михаил Пономарев"
+                position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
+                company="Giper.fm"
               />
             </div>
 
