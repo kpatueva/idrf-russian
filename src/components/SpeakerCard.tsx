@@ -4,9 +4,10 @@ interface SpeakerCardProps {
   position: string;
   company: string;
   logo?: string;
+  logoSize?: string;
 }
 
-export default function SpeakerCard({ photo, name, position, company, logo }: SpeakerCardProps) {
+export default function SpeakerCard({ photo, name, position, company, logo, logoSize = "h-8" }: SpeakerCardProps) {
   return (
     <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 hover:border-[#FECE33] transition-all hover:shadow-xl">
       <div className="flex flex-col items-center text-center">
@@ -19,9 +20,9 @@ export default function SpeakerCard({ photo, name, position, company, logo }: Sp
         </div>
         <h3 className="text-xl font-black text-black mb-2">{name}</h3>
         <p className="text-gray-700 text-sm font-semibold mb-3">{position}</p>
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center h-16">
           {logo ? (
-            <img src={logo} alt={company} className="h-8 object-contain" />
+            <img src={logo} alt={company} className={`${logoSize} object-contain`} />
           ) : (
             <div className="bg-gray-100 px-4 py-2 rounded-lg">
               <span className="text-black font-bold text-sm">{company}</span>

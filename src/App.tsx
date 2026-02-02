@@ -466,7 +466,7 @@ function App() {
                 position="Head of SEO (Ведущий менеджер по поисковой оптимизации)"
                 company="Билайн"
                 logo={beelineLogo}
-                logoSize="h-32"
+                logoSize="h-20"
               />
               <SpeakerCard
                 photo={speaker2Photo}
