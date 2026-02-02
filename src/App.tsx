@@ -664,7 +664,7 @@ function App() {
           </a>
 
           <p className="text-white/60 text-sm mt-6">
-            Регистрация закроется за 3 дня до мероприятия или при достижении лимита участников
+            Регистрация закроется накануне мероприятия или при достижении лимита участников
           </p>
         </div>
       </section>
@@ -681,7 +681,7 @@ function App() {
                 International Digital Retail Forum — платформа для обмена опытом и инновациями в области цифрового ритейла
               </p>
               <p className="text-gray-500 text-sm">
-                Партнер мероприятия: <span className="text-[#FECE33] font-bold">24TTL</span>
+                Партнер мероприятия: <a href="https://24ttl.ru" target="_blank" rel="noopener noreferrer" className="text-[#FECE33] font-bold hover:underline">24TTL</a>
               </p>
             </div>
 
