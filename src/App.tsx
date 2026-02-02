@@ -602,7 +602,7 @@ function App() {
               <img
                 src={venuePhoto}
                 alt="SOK Rybakov Tower"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-left"
               />
             </div>
           </div>
