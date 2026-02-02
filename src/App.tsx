@@ -2,7 +2,7 @@ import { Calendar, MapPin, Clock, Users, Mail } from 'lucide-react';
 import PhotoGallery from './components/PhotoGallery';
 import SpeakerCard from './components/SpeakerCard';
 
-import speaker1Photo from './assets/photo58.jpeg';
+import speaker1Photo from './assets/screenshot_02_12.png';
 import speaker2Photo from './assets/screenshot_12_26_43.png';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker5Photo from './assets/scshot_02_13_56_21.png';
