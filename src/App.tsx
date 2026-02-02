@@ -306,84 +306,129 @@ function App() {
             <h2 className="text-5xl md:text-6xl font-black text-black mb-6 tracking-tight">Программа форума</h2>
             <div className="w-20 h-1 bg-black mx-auto mb-8"></div>
             <p className="text-lg text-black/80">
-              Практические кейсы и экспертные разборы от топ-менеджеров ведущих брендов и маркетплейсов
+              Практические кейсы и экспертные разборы от топ-менеджеров ведущих брендов и маркетплейсов.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">10:00 - 10:15</div>
+              <div className="text-gray-600 text-sm mb-4">10:00 - 10:20</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Открытие
               </div>
               <h3 className="text-2xl font-black text-black mb-3 leading-tight">
-                Регистрация и приветственный кофе
+                Открытие IDRF Forum
               </h3>
-              <p className="text-gray-600">Нетворкинг и знакомство с участниками форума</p>
+              <p className="text-gray-600">Приветственный кофе, Нетворкинг и знакомство с участниками форума</p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">10:15 - 11:00</div>
+              <div className="text-gray-600 text-sm mb-4">10:20 - 10:50</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
-                Keynote
+                Выступление
               </div>
               <h3 className="text-2xl font-black text-black mb-3 leading-tight">
                 ИИ-агенты в e-commerce: от пилота до production
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 Реальные кейсы внедрения ИИ в российских и международных компаниях. Что работает, что нет, и почему.
               </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">11:00 - 11:45</div>
-              <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
-                Панельная дискуссия
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker3Photo} alt="Григорий Черняев" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Григорий Черняев</p>
+                  <p className="text-sm text-gray-600">CEO CIS, 24TTL</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
-                Мультиагентные системы: как автоматизировать целый отдел
-              </h3>
-              <p className="text-gray-600">
-                Практики из топ-брендов расскажут, как ИИ-агенты взаимодействуют между собой и встраиваются в бизнес-процессы команды
-              </p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">11:45 - 12:00</div>
-              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
-                Кофе-брейк
-              </h3>
-              <p className="text-gray-600">Нетворкинг и общение со спикерами</p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">12:00 - 12:45</div>
+              <div className="text-gray-600 text-sm mb-4">10:50 - 11:20</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Кейс-стади
               </div>
               <h3 className="text-2xl font-black text-black mb-3 leading-tight">
-                Технологический стек для ИИ в энтерпрайзе
+                От пилота к процессу
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Как мы внедряли ИИ в Giper.fm без революций, но с результатами.
+              </p>
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker5Photo} alt="Михаил Пономарев" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Михаил Пономарев</p>
+                  <p className="text-sm text-gray-600">Руководитель отдела Content Excellence, Giper.fm</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
+              <div className="text-gray-600 text-sm mb-4">11:20 - 11:50</div>
+              <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
+                Выступление
+              </div>
+              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
+                Распаковываем AI-выдачу
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Данные и поиск приоритетных направлений для защиты перед стейкхолдерами.
+              </p>
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker1Photo} alt="Фёдор Смирнов" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Фёдор Смирнов</p>
+                  <p className="text-sm text-gray-600">Head of SEO, Билайн</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
+              <div className="text-gray-600 text-sm mb-4">11:50 - 12:20</div>
+              <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
+                Выступление
+              </div>
+              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
+                Как с помощью ИИ быстро создавать крутые креативы
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Баннеры, титульные фото, видео. Анализ эффективности через A/B-тестирование.
+              </p>
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker2Photo} alt="Александр Дмитриев" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Александр Дмитриев</p>
+                  <p className="text-sm text-gray-600">Руководитель группы интернет-маркетинга, Polaris</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
+              <div className="text-gray-600 text-sm mb-4">12:20 - 12:30</div>
+              <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
+                Бонус
+              </div>
+              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
+                Презентация новой Q-Commerce-аналитики
               </h3>
               <p className="text-gray-600">
-                Разбор архитектуры, инструментов и подходов. Что нужно учесть до начала внедрения ИИ в крупной компании
+                Александра Дементьева, 24TTL
               </p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">12:45 - 13:00</div>
+              <div className="text-gray-600 text-sm mb-4">12:30 - 13:00</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
-                Q&A и закрытие
+                Q&A и нетворкинг
               </div>
               <h3 className="text-2xl font-black text-black mb-3 leading-tight">
-                Открытая дискуссия со спикерами
+                Подведение итогов
               </h3>
-              <p className="text-gray-600">Ответы на вопросы участников и подведение итогов</p>
+              <p className="text-gray-600">Нетворкинг и общение со спикерами.</p>
             </div>
 
             <div className="bg-black/5 rounded-3xl p-8 border-2 border-black/10">
               <p className="text-gray-700 text-center">
-                <span className="font-black text-black">Важно:</span> Программа может быть изменена.
-                Финальная версия будет направлена зарегистрированным участникам за неделю до мероприятия.
+                <span className="font-black text-black">Важно:</span> В программу могут вноситься изменения.
               </p>
             </div>
           </div>
