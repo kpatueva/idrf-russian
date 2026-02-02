@@ -53,7 +53,7 @@ export default function SuccessPopup({ isOpen, onClose }: SuccessPopupProps) {
           </h3>
 
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Ваша заявка отправлена на премодерацию. Мы свяжемся с вами в течение 24 часов.
+            Ваша заявка отправлена на премодерацию. Вам придет уведомления после её прохождения. Увидимся на IDRF!
           </p>
 
           <div className="w-full bg-gray-200 rounded-full h-2 mb-4 overflow-hidden">
