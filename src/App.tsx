@@ -23,8 +23,9 @@ function App() {
   const [privacyChecked, setPrivacyChecked] = useState(false);
   const [consentChecked, setConsentChecked] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!privacyChecked || !consentChecked) {
@@ -33,7 +34,44 @@ function App() {
     }
 
     setErrorMessage('');
-    setIsPopupOpen(true);
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      firstName: formData.get('firstName') as string,
+      lastName: formData.get('lastName') as string,
+      company: formData.get('company') as string,
+      position: formData.get('position') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+    };
+
+    try {
+      const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
+
+      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+        throw new Error('Google Script URL не настроен');
+      }
+
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      setIsPopupOpen(true);
+      e.currentTarget.reset();
+      setPrivacyChecked(false);
+      setConsentChecked(false);
+    } catch (error) {
+      console.error('Ошибка отправки формы:', error);
+      setErrorMessage('Произошла ошибка при отправке заявки. Попробуйте еще раз.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -107,32 +145,44 @@ function App() {
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
+                  name="firstName"
                   placeholder="Имя*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <input
                   type="text"
+                  name="lastName"
                   placeholder="Фамилия*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <input
                   type="text"
+                  name="company"
                   placeholder="Компания*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <input
                   type="text"
+                  name="position"
                   placeholder="Должность*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Телефон*"
+                  required
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
                 <div className="space-y-3">
@@ -185,9 +235,10 @@ function App() {
                 )}
                 <button
                   type="submit"
-                  className="w-full bg-[#FECE33] text-black py-4 px-8 rounded-full font-bold text-lg hover:bg-[#ffd84d] transition-all transform hover:scale-[1.02] shadow-lg"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#FECE33] text-black py-4 px-8 rounded-full font-bold text-lg hover:bg-[#ffd84d] transition-all transform hover:scale-[1.02] shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  ОТПРАВИТЬ ЗАЯВКУ
+                  {isSubmitting ? 'ОТПРАВКА...' : 'ОТПРАВИТЬ ЗАЯВКУ'}
                 </button>
               </form>
             </div>
