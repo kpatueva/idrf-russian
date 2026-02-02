@@ -371,13 +371,13 @@ function App() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <SpeakerCard
-                photo={speaker1Photo}
+                photo={speaker2Photo}
                 name="Александр Дмитриев"
                 position="Руководитель группы интернет-маркетинга (маркетплейсы)"
                 company="Polaris"
               />
               <SpeakerCard
-                photo={speaker2Photo}
+                photo={speaker1Photo}
                 name="Фёдор Смирнов"
                 position="Head of SEO"
                 company="Билайн"
