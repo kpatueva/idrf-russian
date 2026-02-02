@@ -6,6 +6,7 @@ import photo2 from '../assets/081612.jpg';
 import photo3 from '../assets/081627.jpg';
 import photo4 from '../assets/081639.jpg';
 import photo5 from '../assets/081645.jpg';
+import photo6 from '../assets/photo_2026_02_02.jpg';
 
 interface Photo {
   id: number;
@@ -37,6 +38,11 @@ const photos: Photo[] = [
   {
     id: 5,
     src: photo5,
+    alt: 'IDRF мероприятие',
+  },
+  {
+    id: 6,
+    src: photo6,
     alt: 'IDRF мероприятие',
   },
 ];
