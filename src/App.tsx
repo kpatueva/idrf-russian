@@ -3,7 +3,7 @@ import PhotoGallery from './components/PhotoGallery';
 import SpeakerCard from './components/SpeakerCard';
 
 import speaker1Photo from './assets/photo58.jpeg';
-import speaker2Photo from './assets/photo07.jpeg';
+import speaker2Photo from './assets/screenshot_12_26_43.png';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker4Photo from './assets/2026-01-29_07.20.54.jpg';
 import speaker5Photo from './assets/scshot_02_13_56_21.png';
