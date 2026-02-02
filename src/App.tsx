@@ -6,10 +6,10 @@ import speaker1Photo from './assets/photo58.jpeg';
 import speaker2Photo from './assets/photo07.jpeg';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker4Photo from './assets/2026-01-29_07.20.54.jpg';
-import logo24TTL from './assets/24ttl_logo.svg';
+import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
-import logo24TTLNew from './assets/24ttl_logo_(1).png';
+import logo24TTLNew from './assets/24ttl_logo_new.png';
 
 function App() {
   return (
