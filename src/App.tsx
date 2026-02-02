@@ -5,7 +5,6 @@ import SpeakerCard from './components/SpeakerCard';
 import speaker1Photo from './assets/photo58.jpeg';
 import speaker2Photo from './assets/screenshot_12_26_43.png';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
-import speaker4Photo from './assets/2026-01-29_07.20.54.jpg';
 import speaker5Photo from './assets/scshot_02_13_56_21.png';
 import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
@@ -417,13 +416,6 @@ function App() {
                 photo={speaker3Photo}
                 name="Григорий Черняев"
                 position="CEO CIS"
-                company="24TTL"
-                logo={logo24TTL}
-              />
-              <SpeakerCard
-                photo={speaker4Photo}
-                name="Александра Дементьева"
-                position="Product Lead"
                 company="24TTL"
                 logo={logo24TTL}
               />
