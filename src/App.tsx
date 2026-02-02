@@ -6,6 +6,7 @@ import speaker1Photo from './assets/screenshot_02_12.png';
 import speaker2Photo from './assets/screenshot_12_26_43.png';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker5Photo from './assets/scshot_02_13_56_21.png';
+import speaker6Photo from './assets/202654.jpg';
 import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
@@ -410,9 +411,13 @@ function App() {
               <h3 className="text-2xl font-black text-black mb-3 leading-tight">
                 Презентация новой Q-Commerce-аналитики
               </h3>
-              <p className="text-gray-600">
-                Александра Дементьева, 24TTL
-              </p>
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker6Photo} alt="Александра Дементьева" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Александра Дементьева</p>
+                  <p className="text-sm text-gray-600">Product Lead, 24TTL</p>
+                </div>
+              </div>
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
@@ -475,6 +480,14 @@ function App() {
                 photo={speaker3Photo}
                 name="Григорий Черняев"
                 position="CEO CIS"
+                company="24TTL"
+                logo={logo24TTL}
+                logoSize="h-12"
+              />
+              <SpeakerCard
+                photo={speaker6Photo}
+                name="Александра Дементьева"
+                position="Product Lead"
                 company="24TTL"
                 logo={logo24TTL}
                 logoSize="h-12"
