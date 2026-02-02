@@ -112,15 +112,44 @@ function App() {
                   placeholder="Телефон*"
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-full focus:border-[#FECE33] focus:outline-none transition-colors text-gray-600 placeholder:text-gray-400"
                 />
-                <div className="flex items-start space-x-2">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    className="mt-1 w-4 h-4 accent-[#FECE33]"
-                  />
-                  <label htmlFor="privacy" className="text-xs text-gray-600">
-                    Предоставляя свои регистрационные данные, я соглашаюсь на получение от IDRF и 24TTL информации о мероприятии, напоминаний и приглашений.
-                  </label>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-2">
+                    <input
+                      type="checkbox"
+                      id="privacy"
+                      className="mt-1 w-4 h-4 accent-[#FECE33]"
+                    />
+                    <label htmlFor="privacy" className="text-xs text-gray-600">
+                      Отправляя информацию и посещая наш сайт, вы соглашаетесь с условиями{' '}
+                      <a
+                        href="https://24ttl.ru/wp-content/uploads/2026/01/politika-konfidenczialnosti-01-09-2025.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#FECE33] hover:underline font-semibold"
+                      >
+                        Политику конфиденциальности
+                      </a>
+                      {' '}ООО «24ТТЛ».
+                    </label>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <input
+                      type="checkbox"
+                      id="consent"
+                      className="mt-1 w-4 h-4 accent-[#FECE33]"
+                    />
+                    <label htmlFor="consent" className="text-xs text-gray-600">
+                      Я даю согласие на обработку моих персональных данных ООО «24ТТЛ» и принимаю условия{' '}
+                      <a
+                        href="https://24ttl.ru/wp-content/uploads/2026/01/soglasie-na-obrabotku-personalnyh-dannyh-dlya-sajta.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#FECE33] hover:underline font-semibold"
+                      >
+                        Согласия на обработку персональных данных
+                      </a>.
+                    </label>
+                  </div>
                 </div>
                 <button
                   type="submit"
