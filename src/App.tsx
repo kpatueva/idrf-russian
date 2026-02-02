@@ -403,7 +403,7 @@ function App() {
               <SpeakerCard
                 photo={speaker2Photo}
                 name="Александр Дмитриев"
-                position="Руководитель группы интернет-маркетинга (маркетплейсы)"
+                position="Head of E-Com"
                 company="Polaris"
               />
               <SpeakerCard
