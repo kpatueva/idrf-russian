@@ -20,9 +20,19 @@ import polarisLogo from './assets/e59d3c894f80fa43ef17681e037fd89a.png';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [privacyChecked, setPrivacyChecked] = useState(false);
+  const [consentChecked, setConsentChecked] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!privacyChecked || !consentChecked) {
+      setErrorMessage('Пожалуйста, подтвердите согласие с политикой конфиденциальности и обработкой персональных данных');
+      return;
+    }
+
+    setErrorMessage('');
     setIsPopupOpen(true);
   };
 
@@ -91,7 +101,7 @@ function App() {
               <div className="mb-6">
                 <h3 className="text-2xl font-black text-black mb-2">Регистрация</h3>
                 <p className="text-gray-600 text-sm">
-                  Все заявки проходят премодерацию. Заполните форму, и мы свяжемся с вами в течение 24 часов.
+                  Все заявки проходят премодерацию. Количество мест ограничено.
                 </p>
               </div>
               <form className="space-y-4" onSubmit={handleSubmit}>
@@ -130,6 +140,8 @@ function App() {
                     <input
                       type="checkbox"
                       id="privacy"
+                      checked={privacyChecked}
+                      onChange={(e) => setPrivacyChecked(e.target.checked)}
                       className="mt-1 w-4 h-4 accent-[#FECE33]"
                     />
                     <label htmlFor="privacy" className="text-xs text-gray-600">
@@ -149,6 +161,8 @@ function App() {
                     <input
                       type="checkbox"
                       id="consent"
+                      checked={consentChecked}
+                      onChange={(e) => setConsentChecked(e.target.checked)}
                       className="mt-1 w-4 h-4 accent-[#FECE33]"
                     />
                     <label htmlFor="consent" className="text-xs text-gray-600">
@@ -164,6 +178,11 @@ function App() {
                     </label>
                   </div>
                 </div>
+                {errorMessage && (
+                  <div className="bg-red-100 border-2 border-red-500 text-red-700 px-4 py-3 rounded-2xl text-sm">
+                    {errorMessage}
+                  </div>
+                )}
                 <button
                   type="submit"
                   className="w-full bg-[#FECE33] text-black py-4 px-8 rounded-full font-bold text-lg hover:bg-[#ffd84d] transition-all transform hover:scale-[1.02] shadow-lg"
