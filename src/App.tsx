@@ -21,12 +21,12 @@ function App() {
     <div className="min-h-screen bg-black">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
-              <img src={idrfLogo} alt="IDRF" className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14" />
-              <img src={idrfLogoFull} alt="International Digital Retail Forum" className="hidden sm:block h-12 lg:h-16" />
-              <img src={logo24TTLNew} alt="24TTL" className="hidden sm:block h-12 lg:h-16" />
+            <div className="flex items-center space-x-1 sm:space-x-4 lg:space-x-6 flex-shrink min-w-0">
+              <img src={idrfLogo} alt="IDRF" className="h-8 w-8 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex-shrink-0" />
+              <img src={idrfLogoFull} alt="International Digital Retail Forum" className="h-8 sm:h-12 lg:h-16 flex-shrink-0" />
+              <img src={logo24TTLNew} alt="24TTL" className="h-8 sm:h-12 lg:h-16 flex-shrink-0" />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-900 hover:text-[#FECE33] transition-colors font-medium">О форуме</a>
@@ -35,7 +35,7 @@ function App() {
               <a href="#venue" className="text-gray-900 hover:text-[#FECE33] transition-colors font-medium">Место проведения</a>
               <a href="#gallery" className="text-gray-900 hover:text-[#FECE33] transition-colors font-medium">Фото</a>
             </div>
-            <a href="#register" className="bg-[#FECE33] text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-[#ffd84d] transition-colors font-bold text-sm sm:text-base">
+            <a href="#register" className="bg-[#FECE33] text-black px-3 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-[#ffd84d] transition-colors font-bold text-xs sm:text-base whitespace-nowrap flex-shrink-0 ml-1 sm:ml-0">
               РЕГИСТРАЦИЯ
             </a>
           </div>
