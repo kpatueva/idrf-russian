@@ -11,6 +11,9 @@ import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
 import logo24TTLNew from './assets/24ttl_logo_new.png';
 import venuePhoto from './assets/sok-rybakov-tauer.png';
+import beelineLogo from './assets/beeline_logo_2021.webp';
+import giperLogo from './assets/screenshot_at_feb_02_16-12-03.png';
+import polarisLogo from './assets/e59d3c894f80fa43ef17681e037fd89a.png';
 
 function App() {
   return (
@@ -405,18 +408,21 @@ function App() {
                 name="Михаил Пономарев"
                 position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
                 company="Giper.fm"
+                logo={giperLogo}
               />
               <SpeakerCard
                 photo={speaker1Photo}
                 name="Фёдор Смирнов"
-                position="Head of SEO"
+                position="Head of SEO (Ведущий менеджер по поисковой оптимизации)"
                 company="Билайн"
+                logo={beelineLogo}
               />
               <SpeakerCard
                 photo={speaker2Photo}
                 name="Александр Дмитриев"
-                position="Head of E-Com"
+                position="Руководитель группы интернет-маркетинга (маркетплейсы)"
                 company="Polaris"
+                logo={polarisLogo}
               />
               <SpeakerCard
                 photo={speaker3Photo}
