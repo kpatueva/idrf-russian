@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Calendar, MapPin, Clock, Users, Mail } from 'lucide-react';
 import PhotoGallery from './components/PhotoGallery';
 import SpeakerCard from './components/SpeakerCard';
+import SuccessPopup from './components/SuccessPopup';
 
 import speaker1Photo from './assets/screenshot_02_12.png';
 import speaker2Photo from './assets/screenshot_12_26_43.png';
@@ -17,6 +19,13 @@ import giperLogo from './assets/screenshot_at_feb_02_16-12-03.png';
 import polarisLogo from './assets/e59d3c894f80fa43ef17681e037fd89a.png';
 
 function App() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsPopupOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-black">
       {/* Navigation */}
@@ -85,7 +94,7 @@ function App() {
                   Все заявки проходят премодерацию. Заполните форму, и мы свяжемся с вами в течение 24 часов.
                 </p>
               </div>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
                   placeholder="Имя*"
@@ -721,6 +730,8 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <SuccessPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </div>
   );
 }
