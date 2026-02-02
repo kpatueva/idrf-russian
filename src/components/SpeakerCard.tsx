@@ -9,7 +9,7 @@ interface SpeakerCardProps {
 
 export default function SpeakerCard({ photo, name, position, company, logo, logoSize = "h-8" }: SpeakerCardProps) {
   return (
-    <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 hover:border-[#FECE33] transition-all hover:shadow-xl">
+    <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 hover:border-[#FECE33] transition-all hover:shadow-xl w-80 flex-shrink-0">
       <div className="flex flex-col items-center text-center">
         <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-gray-100">
           <img

@@ -451,8 +451,8 @@ function App() {
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex gap-6 mb-12 overflow-x-auto pb-4 px-4 -mx-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <SpeakerCard
                 photo={speaker5Photo}
                 name="Михаил Пономарев"
