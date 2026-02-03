@@ -625,15 +625,6 @@ function App() {
                   </div>
                 </div>
               </div>
-
-              <div className="bg-[#FECE33] rounded-2xl p-6 text-center">
-                <p className="text-black font-bold text-lg">
-                  И другие эксперты индустрии
-                </p>
-                <p className="text-black/70 text-sm mt-2">
-                  Полный список спикеров будет объявлен после премодерации заявок
-                </p>
-              </div>
             </div>
           </div>
         </div>
