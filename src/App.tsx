@@ -408,7 +408,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">10:20 - 10:50</div>
+              <div className="text-gray-600 text-sm mb-4">10:20 - 10:40</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Выступление
               </div>
@@ -448,7 +448,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">10:50 - 11:20</div>
+              <div className="text-gray-600 text-sm mb-4">11:05 - 11:20</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Кейс-стади
               </div>
@@ -468,7 +468,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">11:20 - 11:50</div>
+              <div className="text-gray-600 text-sm mb-4">11:25 - 11:40</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Выступление
               </div>
@@ -488,7 +488,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">11:50 - 12:20</div>
+              <div className="text-gray-600 text-sm mb-4">11:45 - 12:00</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Выступление
               </div>
@@ -508,7 +508,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">12:20 - 12:30</div>
+              <div className="text-gray-600 text-sm mb-4">12:05 - 12:20</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Бонус
               </div>
@@ -525,7 +525,7 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
-              <div className="text-gray-600 text-sm mb-4">12:30 - 13:00</div>
+              <div className="text-gray-600 text-sm mb-4">12:25 - 13:00</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Q&A и нетворкинг
               </div>
