@@ -558,6 +558,16 @@ function App() {
           <div className="max-w-7xl mx-auto">
             <div className="flex gap-6 mb-12 overflow-x-auto pb-4 px-4 -mx-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <SpeakerCard
+                photo={speaker7Photo}
+                name="Денис Марфутин"
+                position="Член совета директоров (ex. Yandex, Ford, X5, Metro)"
+                company="Ароматный мир и Marshall Auto"
+                logos={[
+                  { src: marshallAutoLogo, size: 'h-8' },
+                  { src: aromatnyMirLogo, size: 'h-8' }
+                ]}
+              />
+              <SpeakerCard
                 photo={speaker5Photo}
                 name="Михаил Пономарев"
                 position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
@@ -579,16 +589,6 @@ function App() {
                 company="Polaris"
                 logo={polarisLogo}
                 logoSize="h-6"
-              />
-              <SpeakerCard
-                photo={speaker7Photo}
-                name="Денис Марфутин"
-                position="Член совета директоров (ex. Yandex, Ford, X5, Metro)"
-                company="Ароматный мир и Marshall Auto"
-                logos={[
-                  { src: marshallAutoLogo, size: 'h-8' },
-                  { src: aromatnyMirLogo, size: 'h-8' }
-                ]}
               />
               <SpeakerCard
                 photo={speaker3Photo}
