@@ -567,7 +567,7 @@ function App() {
                 company="Ароматный мир и Marshall Auto"
                 logos={[
                   { src: marshallAutoLogo, size: 'h-8' },
-                  { src: aromatnyMirLogo, size: 'h-10' }
+                  { src: aromatnyMirLogo, size: 'h-8' }
                 ]}
               />
               <SpeakerCard
