@@ -551,7 +551,7 @@ function App() {
             <h2 className="text-5xl md:text-6xl font-black text-black mb-6 tracking-tight">Спикеры</h2>
             <div className="w-20 h-1 bg-[#FECE33] mx-auto mb-8"></div>
             <p className="text-lg text-gray-700">
-              Практикующие менеджеры из топ-брендов и ведущих маркетплейсов
+              Практикующие эксперты из топ-брендов и ведущих маркетплейсов и ритейлеров
             </p>
           </div>
 
