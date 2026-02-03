@@ -655,7 +655,7 @@ function App() {
                   <MapPin className="w-6 h-6 text-[#FECE33] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-bold text-black">Адрес:</p>
-                    <p className="text-gray-700">Москва, Rybakov Tower</p>
+                    <p className="text-gray-700">Москва, Rybakov Tower, Ленинградский проспект, 36 ст11</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -775,7 +775,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400">
                   <MapPin className="w-5 h-5 text-[#FECE33]" />
-                  <span>SOK Rybakov Tower, Москва</span>
+                  <span>Rybakov Tower, Ленинградский проспект, 36 ст11, Москва</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400">
                   <Calendar className="w-5 h-5 text-[#FECE33]" />
