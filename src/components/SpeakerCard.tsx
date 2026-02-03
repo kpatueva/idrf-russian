@@ -21,7 +21,7 @@ export default function SpeakerCard({ photo, name, position, company, logo, logo
         </div>
         <h3 className="text-lg font-black text-black mb-2">{name}</h3>
         <p className="text-gray-700 text-xs font-semibold mb-3">{position}</p>
-        <div className="flex items-center justify-center gap-3 h-16">
+        <div className={`flex items-center justify-center ${logos ? 'flex-col gap-2 min-h-20' : 'gap-3 h-16'}`}>
           {logos ? (
             logos.map((logoItem, index) => (
               <img

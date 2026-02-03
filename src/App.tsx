@@ -9,7 +9,7 @@ import speaker2Photo from './assets/screenshot_12_26_43.png';
 import speaker3Photo from './assets/2026-01-29_07.21.09.jpg';
 import speaker5Photo from './assets/scshot_02_13_56_21.png';
 import speaker6Photo from './assets/202654.jpg';
-import speaker7Photo from './assets/photo07.jpeg';
+import speaker7Photo from './assets/scrensfe12.png';
 import logo24TTL from './assets/24ttl_logo_new.png';
 import idrfLogo from './assets/idrf_logo.png';
 import idrfLogoFull from './assets/idrf_logo-2.png';
@@ -19,6 +19,7 @@ import beelineLogo from './assets/beeline_logo_2021.webp';
 import giperLogo from './assets/screenshot_at_feb_02_16-12-03.png';
 import polarisLogo from './assets/e59d3c894f80fa43ef17681e037fd89a.png';
 import marshallAutoLogo from './assets/logo.jpg';
+import aromatnyMirLogo from './assets/6e85c.jpeg';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -562,10 +563,12 @@ function App() {
               <SpeakerCard
                 photo={speaker7Photo}
                 name="Денис Марфутин"
-                position="Член совета директоров (ex. Yandex, Ford, X5, Metro)"
+                position="Член совета директоров Ароматный мир и Marshall Auto (ex. Yandex, Ford, X5, Metro)"
                 company="Ароматный мир и Marshall Auto"
-                logo={marshallAutoLogo}
-                logoSize="h-10"
+                logos={[
+                  { src: marshallAutoLogo, size: 'h-8' },
+                  { src: aromatnyMirLogo, size: 'h-10' }
+                ]}
               />
               <SpeakerCard
                 photo={speaker3Photo}
