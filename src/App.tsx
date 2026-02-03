@@ -442,7 +442,7 @@ function App() {
                 <img src={speaker7Photo} alt="Денис Марфутин" className="w-16 h-16 rounded-full object-cover" />
                 <div>
                   <p className="font-bold text-black">Денис Марфутин</p>
-                  <p className="text-sm text-gray-600">Член совета директоров Ароматный мир и Marshall Auto, ex Yandex Ford X5 Retail Metro</p>
+                  <p className="text-sm text-gray-600">Член совета директоров, Ароматный мир и Marshall Auto (ex. Yandex, Ford, X5, Metro)</p>
                 </div>
               </div>
             </div>
@@ -583,7 +583,7 @@ function App() {
               <SpeakerCard
                 photo={speaker7Photo}
                 name="Денис Марфутин"
-                position="Член совета директоров Ароматный мир и Marshall Auto (ex. Yandex, Ford, X5, Metro)"
+                position="Член совета директоров (ex. Yandex, Ford, X5, Metro)"
                 company="Ароматный мир и Marshall Auto"
                 logos={[
                   { src: marshallAutoLogo, size: 'h-8' },
