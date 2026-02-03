@@ -53,7 +53,7 @@ function App() {
         throw new Error('Google Script URL не настроен');
       }
 
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
+      await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -62,6 +62,8 @@ function App() {
         body: JSON.stringify(data),
       });
 
+      // В режиме no-cors мы не можем проверить статус ответа,
+      // но если fetch не выбросил ошибку, значит запрос был отправлен
       setIsPopupOpen(true);
       e.currentTarget.reset();
       setPrivacyChecked(false);
