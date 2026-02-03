@@ -428,6 +428,26 @@ function App() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
+              <div className="text-gray-600 text-sm mb-4">10:45 - 11:00</div>
+              <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
+                Выступление
+              </div>
+              <h3 className="text-2xl font-black text-black mb-3 leading-tight">
+                Тренды 2026
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Как ставка, спрос, реклама и AI запустят новый цикл роста
+              </p>
+              <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
+                <img src={speaker7Photo} alt="Денис Марфутин" className="w-16 h-16 rounded-full object-cover" />
+                <div>
+                  <p className="font-bold text-black">Денис Марфутин</p>
+                  <p className="text-sm text-gray-600">Член совета директоров Ароматный мир и Marshall Auto, ex Yandex Ford X5 Retail Metro</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow">
               <div className="text-gray-600 text-sm mb-4">10:50 - 11:20</div>
               <div className="inline-block bg-[#FECE33] text-black font-bold px-4 py-2 rounded-lg mb-3 text-sm">
                 Кейс-стади
