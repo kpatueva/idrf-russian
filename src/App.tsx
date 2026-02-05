@@ -456,13 +456,13 @@ function App() {
                 От пилота к процессу
               </h3>
               <p className="text-gray-600 mb-4">
-                Как мы внедряли ИИ в Giper.fm без революций, но с результатами.
+                Как мы внедряли ИИ в giper.fm без революций, но с результатами.
               </p>
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
                 <img src={speaker5Photo} alt="Михаил Пономарев" className="w-16 h-16 rounded-full object-cover" />
                 <div>
                   <p className="font-bold text-black">Михаил Пономарев</p>
-                  <p className="text-sm text-gray-600">Руководитель отдела Content Excellence, Giper.fm</p>
+                  <p className="text-sm text-gray-600">Руководитель отдела Content Excellence, giper.fm</p>
                 </div>
               </div>
             </div>
@@ -571,7 +571,7 @@ function App() {
                 photo={speaker5Photo}
                 name="Михаил Пономарев"
                 position="Руководитель отдела Content Excellence, Специалист по внедрению ИИ в процессы работы компании"
-                company="Giper.fm"
+                company="giper.fm"
                 logo={giperLogo}
               />
               <SpeakerCard
