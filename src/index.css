@@ -13,6 +13,41 @@
   scrollbar-width: none;
 }
 
+@keyframes hero-orb-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -40px) scale(1.15); }
+  50% { transform: translate(-20px, 20px) scale(0.9); }
+  75% { transform: translate(15px, 35px) scale(1.08); }
+}
+
+@keyframes hero-orb-pulse {
+  0%, 100% { opacity: 0.18; filter: blur(80px); }
+  50% { opacity: 0.32; filter: blur(100px); }
+}
+
+@keyframes hero-ring-spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes hero-ring-pulse {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.18; }
+}
+
+@keyframes hero-ray {
+  0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  50% { opacity: 0.12; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow-orb,
+  .hero-glow-ring,
+  .hero-glow-ray {
+    animation: none !important;
+  }
+}
+
 /* Scale-in animation for popup */
 @keyframes scale-in {
   0% {

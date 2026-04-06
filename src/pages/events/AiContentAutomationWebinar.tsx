@@ -78,9 +78,68 @@ export default function AiContentAutomationWebinar() {
     <div style={FONT} className="pb-20 lg:pb-0">
       {/* HERO */}
       <section className="pt-28 pb-20 bg-[#0F0F1A] relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#FECE33]/8 blur-[120px]" />
-          <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-teal-500/6 blur-[100px]" />
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div
+            className="hero-glow-orb absolute w-[420px] h-[420px] rounded-full"
+            style={{
+              top: '8%',
+              left: '8%',
+              background: 'radial-gradient(circle, rgba(254,206,51,0.35) 0%, rgba(254,206,51,0) 70%)',
+              animation: 'hero-orb-float 8s ease-in-out infinite, hero-orb-pulse 4s ease-in-out infinite',
+            }}
+          />
+          <div
+            className="hero-glow-orb absolute w-[300px] h-[300px] rounded-full"
+            style={{
+              top: '35%',
+              left: '22%',
+              background: 'radial-gradient(circle, rgba(254,206,51,0.22) 0%, rgba(254,206,51,0) 70%)',
+              animation: 'hero-orb-float 10s ease-in-out 1.5s infinite reverse, hero-orb-pulse 5s ease-in-out 0.8s infinite',
+            }}
+          />
+          <div
+            className="hero-glow-orb absolute w-[180px] h-[180px] rounded-full"
+            style={{
+              top: '55%',
+              left: '5%',
+              background: 'radial-gradient(circle, rgba(254,206,51,0.28) 0%, rgba(254,206,51,0) 65%)',
+              animation: 'hero-orb-float 7s ease-in-out 3s infinite, hero-orb-pulse 3.5s ease-in-out 1.5s infinite',
+            }}
+          />
+          <div
+            className="hero-glow-ring absolute w-[500px] h-[500px] rounded-full border border-[#FECE33]/[0.07]"
+            style={{
+              top: '30%',
+              left: '15%',
+              animation: 'hero-ring-spin 25s linear infinite, hero-ring-pulse 6s ease-in-out infinite',
+            }}
+          />
+          <div
+            className="hero-glow-ring absolute w-[700px] h-[700px] rounded-full border border-[#FECE33]/[0.04]"
+            style={{
+              top: '10%',
+              left: '2%',
+              animation: 'hero-ring-spin 35s linear infinite reverse, hero-ring-pulse 8s ease-in-out 2s infinite',
+            }}
+          />
+          <div
+            className="hero-glow-ray absolute w-[200px] h-[200px] rounded-full"
+            style={{
+              top: '25%',
+              left: '18%',
+              background: 'radial-gradient(circle, rgba(254,206,51,0.15) 0%, transparent 70%)',
+              animation: 'hero-ray 5s ease-in-out infinite',
+            }}
+          />
+          <div
+            className="hero-glow-ray absolute w-[140px] h-[140px] rounded-full"
+            style={{
+              top: '60%',
+              left: '30%',
+              background: 'radial-gradient(circle, rgba(254,206,51,0.12) 0%, transparent 65%)',
+              animation: 'hero-ray 6s ease-in-out 2.5s infinite',
+            }}
+          />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
