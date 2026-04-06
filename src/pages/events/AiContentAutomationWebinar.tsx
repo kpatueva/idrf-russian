@@ -15,6 +15,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import WebinarRegistrationForm from '../../components/WebinarRegistrationForm';
+import HeroBackground from '../../components/HeroBackground';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
 import logo24TTL from '../../assets/24ttl_logo_new.png';
 import idrfLogoFull from '../../assets/idrf_logo-2.png';
@@ -78,80 +79,18 @@ export default function AiContentAutomationWebinar() {
     <div style={FONT} className="pb-20 lg:pb-0">
       {/* HERO */}
       <section className="pt-28 pb-20 bg-[#0F0F1A] relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div
-            className="hero-glow-orb absolute w-[420px] h-[420px] rounded-full"
-            style={{
-              top: '8%',
-              left: '8%',
-              background: 'radial-gradient(circle, rgba(254,206,51,0.35) 0%, rgba(254,206,51,0) 70%)',
-              animation: 'hero-orb-float 8s ease-in-out infinite, hero-orb-pulse 4s ease-in-out infinite',
-            }}
-          />
-          <div
-            className="hero-glow-orb absolute w-[300px] h-[300px] rounded-full"
-            style={{
-              top: '35%',
-              left: '22%',
-              background: 'radial-gradient(circle, rgba(254,206,51,0.22) 0%, rgba(254,206,51,0) 70%)',
-              animation: 'hero-orb-float 10s ease-in-out 1.5s infinite reverse, hero-orb-pulse 5s ease-in-out 0.8s infinite',
-            }}
-          />
-          <div
-            className="hero-glow-orb absolute w-[180px] h-[180px] rounded-full"
-            style={{
-              top: '55%',
-              left: '5%',
-              background: 'radial-gradient(circle, rgba(254,206,51,0.28) 0%, rgba(254,206,51,0) 65%)',
-              animation: 'hero-orb-float 7s ease-in-out 3s infinite, hero-orb-pulse 3.5s ease-in-out 1.5s infinite',
-            }}
-          />
-          <div
-            className="hero-glow-ring absolute w-[500px] h-[500px] rounded-full border border-[#FECE33]/[0.07]"
-            style={{
-              top: '30%',
-              left: '15%',
-              animation: 'hero-ring-spin 25s linear infinite, hero-ring-pulse 6s ease-in-out infinite',
-            }}
-          />
-          <div
-            className="hero-glow-ring absolute w-[700px] h-[700px] rounded-full border border-[#FECE33]/[0.04]"
-            style={{
-              top: '10%',
-              left: '2%',
-              animation: 'hero-ring-spin 35s linear infinite reverse, hero-ring-pulse 8s ease-in-out 2s infinite',
-            }}
-          />
-          <div
-            className="hero-glow-ray absolute w-[200px] h-[200px] rounded-full"
-            style={{
-              top: '25%',
-              left: '18%',
-              background: 'radial-gradient(circle, rgba(254,206,51,0.15) 0%, transparent 70%)',
-              animation: 'hero-ray 5s ease-in-out infinite',
-            }}
-          />
-          <div
-            className="hero-glow-ray absolute w-[140px] h-[140px] rounded-full"
-            style={{
-              top: '60%',
-              left: '30%',
-              background: 'radial-gradient(circle, rgba(254,206,51,0.12) 0%, transparent 65%)',
-              animation: 'hero-ray 6s ease-in-out 2.5s infinite',
-            }}
-          />
-        </div>
+        <HeroBackground />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-[58%_40%] gap-10 lg:gap-16 items-start">
-            <div>
+            <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
               <div className="flex items-center gap-3 mb-7">
-                <span className="bg-[#FECE33] text-black text-xs font-semibold px-4 py-1.5 rounded-full tracking-wide">
-                  Бесплатный вебинар от IDRF × 24TTL
+                <span className="hero-badge bg-[#FECE33] text-black text-xs font-semibold px-4 py-1.5 rounded-full tracking-wide">
+                  Бесплатный вебинар от IDRF x 24TTL
                 </span>
               </div>
 
-              <div className="flex flex-wrap gap-5 mb-7 text-white/70 text-sm font-medium">
+              <div className="flex flex-wrap gap-5 mb-7 text-white/70 text-sm font-medium hero-entrance" style={{ animationDelay: '0.2s' }}>
                 <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-[#FECE33]" />
                   14 апреля 2026, вторник
@@ -166,17 +105,17 @@ export default function AiContentAutomationWebinar() {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-black text-white mb-5 leading-tight tracking-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-black text-white mb-5 leading-tight tracking-tight hero-entrance" style={{ animationDelay: '0.3s' }}>
                 Как брендам работать с{' '}
-                <span className="text-[#FECE33]">Q-comm полкой</span>{' '}
-                в <span className="text-[#FECE33]">2026</span>
+                <span className="text-[#FECE33] hero-text-glow">Q-comm полкой</span>{' '}
+                в <span className="text-[#FECE33] hero-text-glow">2026</span>
               </h1>
 
-              <p className="text-white/80 text-lg mb-7 leading-relaxed max-w-lg">
+              <p className="text-white/80 text-lg mb-7 leading-relaxed max-w-lg hero-entrance" style={{ animationDelay: '0.45s' }}>
                 Аналитика, тренды, исследования быстрой доставки в России
               </p>
 
-              <div className="flex items-center gap-4 text-white/50 text-sm">
+              <div className="flex items-center gap-4 text-white/50 text-sm hero-entrance" style={{ animationDelay: '0.55s' }}>
                 <span className="flex items-center gap-1.5">
                   <Clock className="w-4 h-4" />
                   ~1 час
@@ -186,7 +125,7 @@ export default function AiContentAutomationWebinar() {
               </div>
             </div>
 
-            <div ref={heroFormRef}>
+            <div ref={heroFormRef} className="hero-entrance" style={{ animationDelay: '0.5s' }}>
               <WebinarRegistrationForm variant="dark" />
             </div>
           </div>
