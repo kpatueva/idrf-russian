@@ -12,7 +12,7 @@ export default function MeetupHero({ formRef }: MeetupHeroProps) {
       <HeroBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-[55%_43%] gap-10 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-[55%_43%] gap-10 lg:gap-12 items-center">
           <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
             <div className="flex items-center gap-3 mb-7 hero-entrance" style={{ animationDelay: '0.15s' }}>
               <span className="hero-badge bg-[#FECE33] text-[#1A1A2E] text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase">

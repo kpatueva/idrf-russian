@@ -82,7 +82,7 @@ export default function AiContentAutomationWebinar() {
         <HeroBackground />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-[58%_40%] gap-10 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-[58%_40%] gap-10 lg:gap-16 items-center">
             <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
               <div className="flex items-center gap-3 mb-7">
                 <span className="hero-badge bg-[#FECE33] text-black text-xs font-semibold px-4 py-1.5 rounded-full tracking-wide">
