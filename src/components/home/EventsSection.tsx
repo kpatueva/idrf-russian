@@ -1,18 +1,24 @@
 import { useState } from 'react';
 import EventCard from '../EventCard';
 import { Reveal } from './Reveal';
-import { events, EventFormat } from '../../data/events';
+import { events } from '../../data/events';
 
-const filters: { key: 'all' | EventFormat; label: string }[] = [
-  { key: 'all', label: 'Все' },
-  { key: 'meetup', label: 'Митапы' },
-  { key: 'webinar', label: 'Вебинары' },
-  { key: 'conference', label: 'Конференции' },
+type TimeFilter = 'upcoming' | 'past';
+
+const filters: { key: TimeFilter; label: string }[] = [
+  { key: 'upcoming', label: 'Предстоящие' },
+  { key: 'past', label: 'Прошедшие' },
 ];
 
 export default function EventsSection() {
-  const [activeFilter, setActiveFilter] = useState<'all' | EventFormat>('all');
-  const filteredEvents = activeFilter === 'all' ? events : events.filter((e) => e.format === activeFilter);
+  const [activeFilter, setActiveFilter] = useState<TimeFilter>('upcoming');
+
+  const filteredEvents = events.filter((e) => {
+    if (activeFilter === 'upcoming') {
+      return e.status === 'upcoming' || e.status === 'registration-open';
+    }
+    return e.status === 'past';
+  });
 
   return (
     <section id="events" className="py-20 bg-white">

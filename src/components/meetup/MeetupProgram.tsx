@@ -1,6 +1,6 @@
 import { AlertTriangle } from 'lucide-react';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
-import speaker6Photo from '../../assets/202654.jpg';
+import speaker6Photo from '../../assets/Screenshot_at_Apr_08_16-46-54.png';
 import RevealSection from './RevealSection';
 
 interface ProgramEntry {
