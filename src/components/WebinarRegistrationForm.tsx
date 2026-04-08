@@ -39,11 +39,12 @@ export default function WebinarRegistrationForm({ variant = 'dark', id }: Webina
       company: formData.get('company'),
       position: formData.get('position'),
       event: 'Q-comm Полка 2026 Webinar',
+      timestamp: new Date().toISOString(),
     };
 
     try {
-      const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
-      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+      const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_WEBINAR_URL;
+      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_WEBINAR_URL_HERE') {
         throw new Error('Google Script URL не настроен');
       }
       await fetch(GOOGLE_SCRIPT_URL, {

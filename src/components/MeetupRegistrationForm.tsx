@@ -36,8 +36,8 @@ export default function MeetupRegistrationForm({ variant = 'light', id }: Meetup
     };
 
     try {
-      const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
-      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+      const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_MEETUP_URL;
+      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_MEETUP_URL_HERE') {
         throw new Error('Google Script URL not configured');
       }
       await fetch(GOOGLE_SCRIPT_URL, {
