@@ -4,7 +4,7 @@ import RegistrationForm from '../RegistrationForm';
 import HeroBackground from '../HeroBackground';
 
 interface MeetupHeroProps {
-  formRef: React.RefObject<HTMLDivElement>;
+  formRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export default function MeetupHero({ formRef }: MeetupHeroProps) {

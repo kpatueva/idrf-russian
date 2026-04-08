@@ -7,6 +7,7 @@ import MeetupSpeakers from '../../components/meetup/MeetupSpeakers';
 import MeetupAudience from '../../components/meetup/MeetupAudience';
 import MeetupVenue from '../../components/meetup/MeetupVenue';
 import MeetupFinalCTA from '../../components/meetup/MeetupFinalCTA';
+import MeetupPhotoGallery from '../../components/meetup/MeetupPhotoGallery';
 import { ArrowRight } from 'lucide-react';
 
 const FONT = { fontFamily: "'Manrope', system-ui, sans-serif" };
@@ -34,6 +35,7 @@ export default function DigitalRetailAnalyticsMeetup() {
       <MeetupSpeakers />
       <MeetupAudience />
       <MeetupVenue />
+      <MeetupPhotoGallery />
       <MeetupFinalCTA />
 
       <div

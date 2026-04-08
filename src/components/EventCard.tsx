@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
-import { EventData, formatLabels, statusLabels } from '../data/events';
+import type { EventData } from '../data/events';
+import { formatLabels, statusLabels } from '../data/events';
 
 const formatColors: Record<string, string> = {
   meetup: 'bg-blue-100 text-blue-800',
