@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { Loader2, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
 
 interface WebinarRegistrationFormProps {
   variant?: 'dark' | 'light';
   id?: string;
 }
 
-type FormState = 'idle' | 'loading' | 'success' | 'error';
+type FormState = 'idle' | 'loading' | 'error';
 
 const inputBase =
   'w-full h-12 px-4 rounded-lg text-white text-base transition-all outline-none placeholder:text-white/40 focus:border-[#FECE33]';
@@ -16,6 +17,7 @@ const inputLight =
   'bg-white border-2 border-gray-200 text-gray-700 placeholder:text-gray-400 focus:border-[#FECE33] focus:text-gray-900';
 
 export default function WebinarRegistrationForm({ variant = 'dark', id }: WebinarRegistrationFormProps) {
+  const navigate = useNavigate();
   const [formState, setFormState] = useState<FormState>('idle');
   const [privacyChecked, setPrivacyChecked] = useState(false);
   const [consentChecked, setConsentChecked] = useState(false);
@@ -53,7 +55,7 @@ export default function WebinarRegistrationForm({ variant = 'dark', id }: Webina
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      setFormState('success');
+      navigate('/events/ai-content-automation-webinar/thank-you');
     } catch {
       setFormState('error');
     }
@@ -61,25 +63,6 @@ export default function WebinarRegistrationForm({ variant = 'dark', id }: Webina
 
   const isDark = variant === 'dark';
   const inputClass = `${inputBase} ${isDark ? inputDark : inputLight}`;
-
-  if (formState === 'success') {
-    return (
-      <div
-        id={id}
-        className={`rounded-2xl p-8 flex flex-col items-center text-center gap-4 ${isDark ? 'bg-white/5 border border-white/10' : 'bg-white border-2 border-gray-100 shadow-xl'}`}
-      >
-        <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center">
-          <CheckCircle className="w-9 h-9 text-green-400" />
-        </div>
-        <h3 className={`text-xl font-bold ${isDark ? 'text-white' : 'text-black'}`}>
-          Готово! Ссылку отправим на почту
-        </h3>
-        <p className={isDark ? 'text-white/60 text-sm' : 'text-gray-500 text-sm'}>
-          Вы успешно зарегистрировались на вебинар 14 апреля. Ждём вас!
-        </p>
-      </div>
-    );
-  }
 
   return (
     <form

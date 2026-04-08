@@ -1,14 +1,16 @@
 import { useState } from 'react';
-import { Loader2, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
 
 interface MeetupRegistrationFormProps {
   variant?: 'dark' | 'light';
   id?: string;
 }
 
-type FormState = 'idle' | 'loading' | 'success' | 'error';
+type FormState = 'idle' | 'loading' | 'error';
 
 export default function MeetupRegistrationForm({ variant = 'light', id }: MeetupRegistrationFormProps) {
+  const navigate = useNavigate();
   const [formState, setFormState] = useState<FormState>('idle');
   const [privacyChecked, setPrivacyChecked] = useState(false);
   const [consentChecked, setConsentChecked] = useState(false);
@@ -46,7 +48,7 @@ export default function MeetupRegistrationForm({ variant = 'light', id }: Meetup
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      setFormState('success');
+      navigate('/events/digital-retail-analytics-meetup/thank-you');
     } catch {
       setFormState('error');
     }
@@ -57,25 +59,6 @@ export default function MeetupRegistrationForm({ variant = 'light', id }: Meetup
   const inputClass = isDark
     ? 'w-full h-12 px-4 rounded-lg bg-white/5 border border-white/15 text-white text-sm transition-all outline-none placeholder:text-white/40 focus:border-[#FECE33] focus:shadow-[0_0_0_3px_rgba(254,206,51,0.15)]'
     : 'w-full h-12 px-4 rounded-lg bg-white border border-gray-200 text-gray-900 text-sm transition-all outline-none placeholder:text-gray-400 focus:border-[#FECE33] focus:shadow-[0_0_0_3px_rgba(252,207,50,0.15)]';
-
-  if (formState === 'success') {
-    return (
-      <div
-        id={id}
-        className={`rounded-2xl p-8 flex flex-col items-center text-center gap-4 ${isDark ? 'bg-white/5 border border-white/10' : 'bg-white shadow-2xl'}`}
-      >
-        <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center">
-          <CheckCircle className="w-9 h-9 text-green-500" />
-        </div>
-        <h3 className={`text-xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>
-          Ваша заявка принята!
-        </h3>
-        <p className={isDark ? 'text-white/60 text-sm' : 'text-gray-500 text-sm'}>
-          Мы свяжемся с вами для подтверждения участия.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <form
