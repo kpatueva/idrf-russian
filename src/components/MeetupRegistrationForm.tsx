@@ -39,15 +39,14 @@ export default function MeetupRegistrationForm({ variant = 'light', id }: Meetup
 
     try {
       const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_MEETUP_URL;
-      if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_MEETUP_URL_HERE') {
-        throw new Error('Google Script URL not configured');
+      if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_MEETUP_URL_HERE') {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
       }
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
       navigate('/events/digital-retail-analytics-meetup/thank-you');
     } catch {
       setFormState('error');
