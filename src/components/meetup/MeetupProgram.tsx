@@ -52,7 +52,7 @@ const program: ProgramEntry[] = [
     tag: 'Выступление',
     tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
     title: 'Автоматизация без потери контроля: ИИ в маркетинге бренда',
-    speaker: { photo: '', name: 'Спикер уточняется', role: 'Маркетплейс' },
+    speaker: { photo: '', name: 'Спикер уточняется', role: 'Бренд' },
   },
   {
     time: '12:00 - 13:00',
@@ -78,41 +78,39 @@ export default function MeetupProgram() {
           {program.map((item, i) => (
             <RevealSection key={i} delay={i * 60}>
               <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="text-sm font-bold text-gray-400 whitespace-nowrap pt-1 w-14 flex-shrink-0">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-sm font-bold text-gray-400 whitespace-nowrap">
                     {item.time}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-2 ${item.tagColor}`}>
-                      {item.tag}
-                    </span>
-                    <h4 className="font-black text-[#1A1A2E] text-base mb-1">{item.title}</h4>
-                    {item.desc && (
-                      <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                    )}
-                    {item.speaker && (
-                      <div className="flex items-center gap-3 mt-3 pt-3 border-t border-gray-100">
-                        {item.speaker.photo ? (
-                          <img
-                            src={item.speaker.photo}
-                            alt={item.speaker.name}
-                            className="w-10 h-10 rounded-full object-cover border-2 border-[#FECE33]"
-                          />
-                        ) : (
-                          <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 text-xs font-bold border-2 border-gray-200">
-                            ?
-                          </div>
-                        )}
-                        <div>
-                          <p className="font-bold text-[#1A1A2E] text-sm">{item.speaker.name}</p>
-                          {item.speaker.role && (
-                            <p className="text-gray-400 text-xs">{item.speaker.role}</p>
-                          )}
-                        </div>
+                  </span>
+                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full ${item.tagColor}`}>
+                    {item.tag}
+                  </span>
+                </div>
+                <h4 className="font-black text-[#1A1A2E] text-base mb-1">{item.title}</h4>
+                {item.desc && (
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                )}
+                {item.speaker && (
+                  <div className="flex items-center gap-3 mt-3 pt-3 border-t border-gray-100">
+                    {item.speaker.photo ? (
+                      <img
+                        src={item.speaker.photo}
+                        alt={item.speaker.name}
+                        className="w-10 h-10 rounded-full object-cover border-2 border-[#FECE33]"
+                      />
+                    ) : (
+                      <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 text-xs font-bold border-2 border-gray-200">
+                        ?
                       </div>
                     )}
+                    <div>
+                      <p className="font-bold text-[#1A1A2E] text-sm">{item.speaker.name}</p>
+                      {item.speaker.role && (
+                        <p className="text-gray-400 text-xs">{item.speaker.role}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </RevealSection>
           ))}
