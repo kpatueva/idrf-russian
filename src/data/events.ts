@@ -29,13 +29,12 @@ export const events: EventData[] = [
     status: 'past',
     description: 'Как на практике работает ИИ в e-commerce. Реальные кейсы внедрения ИИ-агентов от топ-менеджеров ведущих брендов и маркетплейсов.',
     tags: ['AI', 'E-commerce', 'Кейсы'],
-    speakersCount: 6,
   },
   {
     id: '2',
     slug: 'ai-content-automation-webinar',
-    title: 'Q-comm полка 2026',
-    subtitle: 'Как брендам работать с Q-comm полкой в 2026',
+    title: 'Как брендам работать с Q-comm полкой в 2026',
+    subtitle: 'Аналитика, тренды, исследования быстрой доставки в России',
     date: '14 апреля 2026',
     time: '14:00 - 15:00 МСК',
     location: 'Онлайн, бесплатно',
@@ -43,7 +42,6 @@ export const events: EventData[] = [
     status: 'registration-open',
     description: 'Аналитика, тренды и исследования быстрой доставки в России. Демо платформы 24SHELF и спецусловия для участников.',
     tags: ['Q-commerce', 'Аналитика', 'FMCG'],
-    speakersCount: 1,
   },
   {
     id: '3',
@@ -55,9 +53,8 @@ export const events: EventData[] = [
     location: 'Москва, SOK Rybakov Tower',
     format: 'meetup',
     status: 'registration-open',
-    description: 'Кейсы компаний, инструменты, перспективы. Закрытый оффлайн-митап для профессионалов e-commerce.',
-    tags: ['AI', 'E-commerce', 'Кейсы', 'Оффлайн'],
-    speakersCount: 4,
+    description: 'Кейсы компаний, инструменты, перспективы. Закрытый митап для профессионалов e-commerce.',
+    tags: ['AI', 'E-commerce', 'Кейсы'],
   },
 ];
 

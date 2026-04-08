@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, MapPin, Users, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 import { EventData, formatLabels, statusLabels } from '../data/events';
 
 const formatColors: Record<string, string> = {
@@ -57,12 +57,7 @@ export default function EventCard({ event }: { event: EventData }) {
               <MapPin className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
               <span>{event.location}</span>
             </div>
-            {event.speakersCount && (
-              <div className="flex items-center space-x-1.5">
-                <Users className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
-                <span>{event.speakersCount} спикеров</span>
-              </div>
-            )}
+
           </div>
 
           <div className="flex items-center text-black font-bold group-hover:text-[#FECE33] transition-colors">

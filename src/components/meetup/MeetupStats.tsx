@@ -47,11 +47,12 @@ export default function MeetupStats() {
         <RevealSection>
           <div className="flex flex-wrap justify-center gap-4 text-white/70 text-sm font-medium">
             {[
-              { flag: '\u{1F1F7}\u{1F1FA}', city: 'Москва' },
-              { flag: '\u{1F1F0}\u{1F1FF}', city: 'Алматы' },
-              { flag: '\u{1F1E6}\u{1F1F2}', city: 'Ереван' },
-              { flag: '\u{1F1EC}\u{1F1EA}', city: 'Тбилиси' },
               { flag: '\u{1F1E6}\u{1F1EA}', city: 'Дубай' },
+              { flag: '\u{1F1F2}\u{1F1FD}', city: 'Мехико' },
+              { flag: '\u{1F1EE}\u{1F1E9}', city: 'Джакарта' },
+              { flag: '\u{1F1F0}\u{1F1FF}', city: 'Алматы' },
+              { flag: '\u{1F1F0}\u{1F1F7}', city: 'Сеул' },
+              { flag: '\u{1F1EC}\u{1F1E7}', city: 'Лондон' },
             ].map((item) => (
               <span key={item.city} className="flex items-center gap-1.5">
                 <span className="text-base">{item.flag}</span>

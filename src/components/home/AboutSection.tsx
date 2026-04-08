@@ -11,11 +11,12 @@ const stats = [
 ];
 
 const geography = [
-  { flag: '\u{1F1F7}\u{1F1FA}', city: 'Москва' },
-  { flag: '\u{1F1F0}\u{1F1FF}', city: 'Алматы' },
-  { flag: '\u{1F1E6}\u{1F1F2}', city: 'Ереван' },
-  { flag: '\u{1F1EC}\u{1F1EA}', city: 'Тбилиси' },
   { flag: '\u{1F1E6}\u{1F1EA}', city: 'Дубай' },
+  { flag: '\u{1F1F2}\u{1F1FD}', city: 'Мехико' },
+  { flag: '\u{1F1EE}\u{1F1E9}', city: 'Джакарта' },
+  { flag: '\u{1F1F0}\u{1F1FF}', city: 'Алматы' },
+  { flag: '\u{1F1F0}\u{1F1F7}', city: 'Сеул' },
+  { flag: '\u{1F1EC}\u{1F1E7}', city: 'Лондон' },
 ];
 
 export default function AboutSection() {
@@ -44,7 +45,7 @@ export default function AboutSection() {
             </Reveal>
             <Reveal delay={100}>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Наши мероприятия прошли в Москве, Дубае, Алматы, Ереване, Тбилиси и других городах мира.
+                Наши мероприятия прошли в Дубае, Мехико, Джакарте, Алматы, Сеуле, Лондоне и других городах мира.
               </p>
             </Reveal>
             <Reveal delay={150}>
