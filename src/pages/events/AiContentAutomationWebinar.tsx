@@ -14,7 +14,8 @@ import {
   ExternalLink,
   ArrowRight,
 } from 'lucide-react';
-import WebinarRegistrationForm from '../../components/WebinarRegistrationForm';
+import RegistrationForm from '../../components/RegistrationForm';
+import { useNavigate } from 'react-router-dom';
 import HeroBackground from '../../components/HeroBackground';
 import CountUp from '../../components/meetup/CountUp';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
@@ -63,6 +64,7 @@ function RevealSection({ children, delay = 0, className = '', style }: { childre
 const FONT = { fontFamily: "'Manrope', system-ui, sans-serif" };
 
 export default function AiContentAutomationWebinar() {
+  const navigate = useNavigate();
   const [showStickyBar, setShowStickyBar] = useState(false);
   const heroFormRef = useRef<HTMLDivElement>(null);
 
@@ -119,7 +121,12 @@ export default function AiContentAutomationWebinar() {
             </div>
 
             <div ref={heroFormRef} className="hero-entrance" style={{ animationDelay: '0.5s' }}>
-              <WebinarRegistrationForm variant="dark" />
+              <RegistrationForm
+                variant="dark"
+                eventName="Q-comm Полка 2026 Webinar"
+                googleScriptEnvKey="VITE_GOOGLE_SCRIPT_WEBINAR_URL"
+                onSuccess={() => navigate('/events/ai-content-automation-webinar/thank-you')}
+              />
             </div>
           </div>
         </div>
@@ -476,7 +483,12 @@ export default function AiContentAutomationWebinar() {
             </RevealSection>
 
             <RevealSection delay={100}>
-              <WebinarRegistrationForm variant="dark" />
+              <RegistrationForm
+                variant="dark"
+                eventName="Q-comm Полка 2026 Webinar"
+                googleScriptEnvKey="VITE_GOOGLE_SCRIPT_WEBINAR_URL"
+                onSuccess={() => navigate('/events/ai-content-automation-webinar/thank-you')}
+              />
               <p className="text-white/40 text-xs text-center mt-4">
                 Регистрация закроется накануне мероприятия
               </p>

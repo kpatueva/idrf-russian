@@ -1,5 +1,6 @@
 import { Calendar, Clock, MapPin } from 'lucide-react';
-import MeetupRegistrationForm from '../MeetupRegistrationForm';
+import { useNavigate } from 'react-router-dom';
+import RegistrationForm from '../RegistrationForm';
 import HeroBackground from '../HeroBackground';
 
 interface MeetupHeroProps {
@@ -7,6 +8,8 @@ interface MeetupHeroProps {
 }
 
 export default function MeetupHero({ formRef }: MeetupHeroProps) {
+  const navigate = useNavigate();
+
   return (
     <section className="pt-28 pb-20 bg-[#1A1A2E] relative overflow-hidden">
       <HeroBackground />
@@ -50,7 +53,13 @@ export default function MeetupHero({ formRef }: MeetupHeroProps) {
           </div>
 
           <div ref={formRef} className="hero-entrance" style={{ animationDelay: '0.45s' }}>
-            <MeetupRegistrationForm variant="dark" id="register" />
+            <RegistrationForm
+              variant="dark"
+              id="register"
+              eventName="AI E-commerce Meetup 23 April 2026"
+              googleScriptEnvKey="VITE_GOOGLE_SCRIPT_MEETUP_URL"
+              onSuccess={() => navigate('/events/digital-retail-analytics-meetup/thank-you')}
+            />
           </div>
         </div>
       </div>
