@@ -50,7 +50,7 @@ export default function WebinarRegistrationForm({ variant = 'dark', id }: Webina
         await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify(data),
         });
       }
