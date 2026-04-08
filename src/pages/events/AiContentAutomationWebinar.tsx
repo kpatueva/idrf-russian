@@ -94,11 +94,11 @@ export default function AiContentAutomationWebinar() {
               <div className="flex flex-wrap gap-5 mb-7 text-white/70 text-sm font-medium hero-entrance" style={{ animationDelay: '0.2s' }}>
                 <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-[#FECE33]" />
-                  14 апреля 2026, вторник
+                  14 апреля 2026
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-[#FECE33]" />
-                  14:00 МСК
+                  14:00-15:00 МСК
                 </span>
                 <span className="flex items-center gap-2">
                   <Monitor className="w-4 h-4 text-[#FECE33]" />
@@ -262,8 +262,6 @@ export default function AiContentAutomationWebinar() {
 
           <RevealSection>
             <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-lg">
-              <div className="text-gray-400 text-sm mb-6 font-medium">~1 час · Онлайн · 14 апреля 2026</div>
-
               <div className="space-y-0">
                 {[
                   {
