@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="w-5 h-5 text-[#FECE33]" />
-                <span>info@idrf.online</span>
+                <span>hello@24ttl.net</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-[#FECE33]" />

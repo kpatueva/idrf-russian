@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import WebinarRegistrationForm from '../../components/WebinarRegistrationForm';
 import HeroBackground from '../../components/HeroBackground';
+import CountUp from '../../components/meetup/CountUp';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
 import logo24TTL from '../../assets/24ttl_logo_new.png';
 import idrfLogoFull from '../../assets/idrf_logo-2.png';
@@ -86,7 +87,7 @@ export default function AiContentAutomationWebinar() {
             <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
               <div className="flex items-center gap-3 mb-7">
                 <span className="hero-badge bg-[#FECE33] text-black text-xs font-semibold px-4 py-1.5 rounded-full tracking-wide">
-                  Бесплатный вебинар от IDRF x 24TTL
+                  IDRF Meetup
                 </span>
               </div>
 
@@ -136,39 +137,58 @@ export default function AiContentAutomationWebinar() {
       <section className="py-12 bg-[#0F0F1A] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <RevealSection
-              className="rounded-2xl p-6 flex items-center justify-center gap-4 bg-white/5 border border-white/10"
-            >
-              <div className="flex flex-col items-center gap-3">
-                <div className="flex items-center gap-3 flex-wrap justify-center">
+            <RevealSection className="rounded-2xl p-6 bg-[#FECE33] border-2 border-[#0F0F1A]">
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-3 flex-wrap">
                   <img src={idrfLogoFull} alt="IDRF" className="h-7 object-contain" />
-                  <span className="text-white/40 font-bold">×</span>
+                  <span className="text-[#0F0F1A]/40 font-bold text-sm">x</span>
                   <img src={logo24TTL} alt="24TTL" className="h-7 object-contain" />
                 </div>
-                <span className="text-white/40 text-xs text-center">Организаторы вебинара</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-[#0F0F1A] font-black text-sm">IDRF</span>
+                  <span className="bg-white text-[#0F0F1A] text-xs font-bold px-2 py-0.5 rounded-full">С 2019</span>
+                </span>
               </div>
             </RevealSection>
 
             <RevealSection delay={100} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #6B21A8, #7C3AED)' }}>
-              <div className="text-3xl font-black mb-1">1 999 000</div>
-              <div className="text-white/70 text-sm leading-snug">карточек с рич-контентом за 2025</div>
+              <div className="text-5xl lg:text-6xl font-black mb-1">
+                <CountUp end={3} duration={1200} />
+              </div>
+              <div className="text-[#FECE33] text-xs font-bold tracking-widest uppercase">Конференции</div>
             </RevealSection>
 
-            <RevealSection delay={200} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #0F766E, #14B8A6)' }}>
-              <div className="text-3xl font-black mb-1">256</div>
-              <div className="text-white/70 text-sm leading-snug">партнёров и клиентов</div>
+            <RevealSection delay={200} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #6B2D5B, #4A1D3D)' }}>
+              <div className="text-5xl lg:text-6xl font-black mb-1">
+                <CountUp end={50} suffix="+" duration={1500} />
+              </div>
+              <div className="text-[#FECE33] text-xs font-bold tracking-widest uppercase">Митапов</div>
             </RevealSection>
 
-            <RevealSection delay={300} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #1D4ED8, #0EA5E9)' }}>
-              <div className="text-3xl font-black mb-1">333 трлн ₽</div>
-              <div className="text-white/70 text-sm leading-snug">оборот компаний-клиентов</div>
+            <RevealSection delay={300} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #3D2D6B, #2D1B4E)' }}>
+              <div className="text-5xl lg:text-6xl font-black mb-1">
+                <CountUp end={40} suffix="+" duration={1500} />
+              </div>
+              <div className="text-[#FECE33] text-xs font-bold tracking-widest uppercase">Вебинаров</div>
             </RevealSection>
           </div>
 
           <RevealSection>
-            <p className="text-white/40 text-xs text-center">
-              Официальный провайдер digital shelf-решений: LG · Samsung · P&G · Mars · Reckitt · Colgate · Heinz · Bayer и другие бренды Fortune 500
-            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-white/70 text-sm font-medium">
+              {[
+                { flag: '\u{1F1E6}\u{1F1EA}', city: 'Дубай' },
+                { flag: '\u{1F1F2}\u{1F1FD}', city: 'Мехико' },
+                { flag: '\u{1F1EE}\u{1F1E9}', city: 'Джакарта' },
+                { flag: '\u{1F1F0}\u{1F1FF}', city: 'Алматы' },
+                { flag: '\u{1F1F0}\u{1F1F7}', city: 'Сеул' },
+                { flag: '\u{1F1EC}\u{1F1E7}', city: 'Лондон' },
+              ].map((item) => (
+                <span key={item.city} className="flex items-center gap-1.5">
+                  <span className="text-base">{item.flag}</span>
+                  {item.city}
+                </span>
+              ))}
+            </div>
           </RevealSection>
         </div>
       </section>
@@ -182,9 +202,9 @@ export default function AiContentAutomationWebinar() {
             </h2>
             <div className="w-16 h-[3px] bg-[#FECE33] mx-auto mb-6" />
             <p className="text-gray-600 text-lg leading-relaxed">
-              Q-commerce — единственный канал в России, который продолжает расти. Но большинство FMCG-брендов
+              Q-commerce — единственный канал в России, темпы роста которого выросли. Но большинство FMCG-брендов
               до сих пор работают без аналитики полки: не видят стоки, не знают цены конкурентов, принимают
-              решения вслепую. Этот вебинар меняет картину.
+              решения вслепую. Этот вебинар всё изменит.
             </p>
           </RevealSection>
 
@@ -345,7 +365,7 @@ export default function AiContentAutomationWebinar() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       Продуктовая IT-компания №1 в России и СНГ по синдикации рич-контента и решениям digital
                       merchandising в онлайн-ритейле. Резидент «Сколково», аккредитованная IT-компания, в реестре
-                      разработчиков российского ПО. Технологический партнёр Ozon и банка «Точка». Офисы в ОАЭ,
+                      разработчиков российского ПО. Технологический партнёр маркетплейсов и онлайн-ритейлеров. Офисы в ОАЭ,
                       Индонезии, Казахстане, Южной Корее, Мексике.
                     </p>
                     <a
@@ -359,7 +379,7 @@ export default function AiContentAutomationWebinar() {
                     </a>
                   </div>
                   <div className="text-gray-400 text-xs leading-relaxed">
-                    Клиенты: LG, Samsung, P&G, Yandex, Sber, STADA, AstraZeneca, Bayer, Colgate, Reckitt, Mars,
+                    Клиенты: LG, Samsung, Yandex, Sber, STADA, AstraZeneca, Bayer, Colgate, Reckitt,
                     Heinz, SPLAT, Барьер, Gorenje, Groupe SEB, Xiaomi, Huawei, Midea, Polaris и другие бренды Fortune 500.
                   </div>
                 </div>

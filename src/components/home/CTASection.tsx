@@ -21,7 +21,7 @@ export default function CTASection() {
         </Reveal>
         <Reveal delay={160}>
           <a
-            href="mailto:info@idrf.online"
+            href="mailto:hello@24ttl.net"
             className="inline-flex items-center gap-2 bg-[#FECE33] text-[#0F0F1A] px-10 py-4 rounded-full font-bold text-lg hover:bg-[#e5bc2d] transition-all transform hover:scale-[1.03] shadow-lg"
           >
             Написать нам
