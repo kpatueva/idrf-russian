@@ -66,29 +66,27 @@ export default function AboutSection() {
           </div>
 
           <Reveal delay={200}>
-            <div className="grid grid-cols-2 gap-3 h-[380px]">
-              <div className="rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[420px]">
+              <div className="row-span-2 rounded-2xl overflow-hidden">
                 <img
                   src={photo1}
                   alt="IDRF"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="grid grid-rows-2 gap-3">
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src={photo2}
-                    alt="IDRF"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src={photo3}
-                    alt="IDRF"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src={photo2}
+                  alt="IDRF"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src={photo3}
+                  alt="IDRF"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
               </div>
             </div>
           </Reveal>

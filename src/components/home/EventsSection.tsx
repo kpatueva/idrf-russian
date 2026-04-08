@@ -45,9 +45,9 @@ export default function EventsSection() {
           ))}
         </Reveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {filteredEvents.map((event, i) => (
-            <Reveal key={event.id} delay={i * 80}>
+            <Reveal key={event.id} delay={i * 80} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md flex">
               <EventCard event={event} />
             </Reveal>
           ))}

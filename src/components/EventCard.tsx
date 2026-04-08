@@ -20,9 +20,9 @@ export default function EventCard({ event }: { event: EventData }) {
   return (
     <Link
       to={`/events/${event.slug}`}
-      className={`group block bg-white rounded-3xl border-2 border-gray-200 overflow-hidden transition-all duration-300 hover:border-[#FECE33] hover:shadow-xl ${isPast ? 'opacity-80 hover:opacity-100' : ''}`}
+      className={`group flex flex-col bg-white rounded-3xl border-2 border-gray-200 overflow-hidden transition-all duration-300 hover:border-[#FECE33] hover:shadow-xl w-full ${isPast ? 'opacity-80 hover:opacity-100' : ''}`}
     >
-      <div className="p-8">
+      <div className="p-8 flex flex-col flex-1">
         <div className="flex flex-wrap items-center gap-2 mb-5">
           <span className={`px-3 py-1 rounded-full text-xs font-bold ${formatColors[event.format]}`}>
             {formatLabels[event.format]}
@@ -43,30 +43,32 @@ export default function EventCard({ event }: { event: EventData }) {
         <p className="text-gray-500 font-medium mb-4">{event.subtitle}</p>
         <p className="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">{event.description}</p>
 
-        <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
-          <div className="flex items-center space-x-1.5">
-            <Calendar className="w-4 h-4 text-[#FECE33]" />
-            <span>{event.date}</span>
-          </div>
-          <div className="flex items-center space-x-1.5">
-            <Clock className="w-4 h-4 text-[#FECE33]" />
-            <span>{event.time}</span>
-          </div>
-          <div className="flex items-center space-x-1.5">
-            <MapPin className="w-4 h-4 text-[#FECE33]" />
-            <span>{event.location}</span>
-          </div>
-          {event.speakersCount && (
+        <div className="mt-auto">
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-500 mb-6">
             <div className="flex items-center space-x-1.5">
-              <Users className="w-4 h-4 text-[#FECE33]" />
-              <span>{event.speakersCount} спикеров</span>
+              <Calendar className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
+              <span>{event.date}</span>
             </div>
-          )}
-        </div>
+            <div className="flex items-center space-x-1.5">
+              <Clock className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
+              <span>{event.time}</span>
+            </div>
+            <div className="flex items-center space-x-1.5">
+              <MapPin className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
+              <span>{event.location}</span>
+            </div>
+            {event.speakersCount && (
+              <div className="flex items-center space-x-1.5">
+                <Users className="w-4 h-4 text-[#FECE33] flex-shrink-0" />
+                <span>{event.speakersCount} спикеров</span>
+              </div>
+            )}
+          </div>
 
-        <div className="flex items-center text-black font-bold group-hover:text-[#FECE33] transition-colors">
-          <span>{isPast ? 'Посмотреть детали' : 'Подробнее'}</span>
-          <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
+          <div className="flex items-center text-black font-bold group-hover:text-[#FECE33] transition-colors">
+            <span>{isPast ? 'Посмотреть детали' : 'Подробнее'}</span>
+            <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
+          </div>
         </div>
       </div>
     </Link>

@@ -37,7 +37,7 @@ export const events: EventData[] = [
     title: 'Q-comm полка 2026',
     subtitle: 'Как брендам работать с Q-comm полкой в 2026',
     date: '14 апреля 2026',
-    time: '14:00 МСК',
+    time: '14:00 - 15:00 МСК',
     location: 'Онлайн, бесплатно',
     format: 'webinar',
     status: 'registration-open',
