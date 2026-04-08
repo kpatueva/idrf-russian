@@ -18,71 +18,48 @@ interface ProgramEntry {
 
 const program: ProgramEntry[] = [
   {
-    time: '09:30',
+    time: '09:30 - 10:00',
     tag: 'Открытие',
     tagColor: 'bg-[#FECE33] text-[#1A1A2E]',
-    title: 'Приветствие и обзор повестки',
-    desc: 'Знакомство с участниками, формат мероприятия, цели встречи',
-    speaker: { photo: speakerPhoto, name: 'Григорий Черняев', role: 'CEO CIS, 24TTL' },
+    title: 'Открытие IDRF Forum',
+    desc: 'Приветственный кофе, Нетворкинг и знакомство с участниками форума',
   },
   {
-    time: '09:45',
+    time: '10:00 - 10:20',
     tag: 'Выступление',
     tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
     title: 'ИИ в российском e-commerce: контекст 2026',
     desc: 'Обзор рынка, ключевые тренды и барьеры внедрения ИИ в России',
-    speaker: { photo: '', name: 'Спикер уточняется', role: '' },
+    speaker: { photo: speakerPhoto, name: 'Григорий Черняев', role: 'CEO CIS, 24TTL' },
   },
   {
-    time: '10:15',
+    time: '10:30 - 10:50',
     tag: 'Кейс-стади',
     tagColor: 'bg-sky-500/15 text-sky-600 border border-sky-500/20',
-    title: 'Тема уточняется',
-    desc: 'Реальный кейс внедрения ИИ-решения в e-commerce компании',
-    speaker: { photo: '', name: 'Спикер уточняется', role: '' },
+    title: 'Практика создания ИИ-сотрудников и цифровых отделов в e-commerce',
+    desc: 'Обзор проектов автоматизации контента и бизнес-процессов на стороне ритейлеров и брендов',
+    speaker: { photo: speaker6Photo, name: 'Александр Астахов', role: 'AI Lead, 24TTL' },
   },
   {
-    time: '10:45',
+    time: '11:00 - 11:20',
     tag: 'Выступление',
     tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
-    title: 'Инструменты и платформы: что работает на практике',
-    desc: 'Обзор AI-инструментов для аналитики, контента и автоматизации',
-    speaker: { photo: speaker6Photo, name: 'Александр Ильинов', role: 'Head of Sales, 24TTL' },
+    title: 'От эксперимента к масштабу: путь ИИ-проекта внутри крупной платформы',
+    speaker: { photo: '', name: 'Спикер уточняется', role: 'Маркетплейс' },
   },
   {
-    time: '11:15',
-    tag: 'Бонус',
-    tagColor: 'bg-amber-500/15 text-amber-600 border border-amber-500/20',
-    title: 'Кофе-брейк и нетворкинг',
-    desc: 'Неформальное общение, обмен контактами',
+    time: '11:30 - 11:50',
+    tag: 'Выступление',
+    tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
+    title: 'Автоматизация без потери контроля: ИИ в маркетинге бренда',
+    speaker: { photo: '', name: 'Спикер уточняется', role: 'Маркетплейс' },
   },
   {
-    time: '11:35',
-    tag: 'Кейс-стади',
-    tagColor: 'bg-sky-500/15 text-sky-600 border border-sky-500/20',
-    title: 'Тема уточняется',
-    desc: 'Кейс из практики: внедрение, результаты, уроки',
-    speaker: { photo: '', name: 'Спикер уточняется', role: '' },
-  },
-  {
-    time: '12:05',
-    tag: 'Панельная дискуссия',
-    tagColor: 'bg-rose-500/15 text-rose-600 border border-rose-500/20',
-    title: 'Перспективы: что дальше?',
-    desc: 'Открытая дискуссия о будущем ИИ в e-commerce с участием всех спикеров',
-  },
-  {
-    time: '12:40',
-    tag: 'Q&A',
+    time: '12:00 - 13:00',
+    tag: 'Q&A и нетворкинг',
     tagColor: 'bg-gray-100 text-gray-600',
-    title: 'Вопросы и ответы',
-  },
-  {
-    time: '13:00',
-    tag: 'Завершение',
-    tagColor: 'bg-gray-100 text-gray-600',
-    title: 'Нетворкинг',
-    desc: 'Неформальное общение',
+    title: 'Подведение итогов',
+    desc: 'Нетворкинг и общение со спикерами.',
   },
 ];
 
@@ -94,10 +71,7 @@ export default function MeetupProgram() {
           <h2 className="text-4xl md:text-5xl font-black text-[#1A1A2E] mb-4 tracking-tight">
             Программа митапа
           </h2>
-          <div className="w-16 h-[3px] bg-[#1A1A2E] mx-auto mb-6" />
-          <p className="text-[#1A1A2E]/70 text-base">
-            23 апреля 2026 -- 9:30 -- 13:00 МСК -- Rybakov Tower, Москва
-          </p>
+          <div className="w-16 h-[3px] bg-[#1A1A2E] mx-auto" />
         </RevealSection>
 
         <div className="max-w-3xl mx-auto space-y-4">

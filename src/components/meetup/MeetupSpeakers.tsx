@@ -21,21 +21,21 @@ const speakers: Speaker[] = [
   },
   {
     photo: speaker6Photo,
-    name: 'Александр Ильинов',
-    role: 'Head of Sales',
+    name: 'Александр Астахов',
+    role: 'AI Lead',
     company: '24TTL',
     logo: logo24TTL,
   },
   {
     photo: '',
     name: 'Спикер уточняется',
-    role: '',
+    role: 'Маркетплейс',
     company: '',
   },
   {
     photo: '',
     name: 'Спикер уточняется',
-    role: '',
+    role: 'Маркетплейс',
     company: '',
   },
 ];

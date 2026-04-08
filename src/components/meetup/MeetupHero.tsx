@@ -16,10 +16,10 @@ export default function MeetupHero({ formRef }: MeetupHeroProps) {
           <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
             <div className="flex items-center gap-3 mb-7 hero-entrance" style={{ animationDelay: '0.15s' }}>
               <span className="hero-badge bg-[#FECE33] text-[#1A1A2E] text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase">
-                IDRF x 24TTL
+                IDRF Meetup
               </span>
               <span className="bg-white/10 text-white/70 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/10">
-                Оффлайн
+                Офлайн-мероприятие
               </span>
             </div>
 
