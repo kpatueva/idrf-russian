@@ -87,7 +87,7 @@ export default function AiContentAutomationWebinar() {
             <div className="hero-entrance" style={{ animationDelay: '0.1s' }}>
               <div className="flex items-center gap-3 mb-7">
                 <span className="hero-badge bg-[#FECE33] text-black text-xs font-semibold px-4 py-1.5 rounded-full tracking-wide">
-                  IDRF Meetup
+                  IDRF Webinar
                 </span>
               </div>
 
@@ -116,14 +116,6 @@ export default function AiContentAutomationWebinar() {
                 Аналитика, тренды, исследования быстрой доставки в России
               </p>
 
-              <div className="flex items-center gap-4 text-white/50 text-sm hero-entrance" style={{ animationDelay: '0.55s' }}>
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4" />
-                  ~1 час
-                </span>
-                <span className="w-1 h-1 rounded-full bg-white/30" />
-                <span>Бесплатно</span>
-              </div>
             </div>
 
             <div ref={heroFormRef} className="hero-entrance" style={{ animationDelay: '0.5s' }}>
@@ -266,7 +258,6 @@ export default function AiContentAutomationWebinar() {
             <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">
               На вебинаре вы узнаете
             </h2>
-            <div className="w-16 h-[3px] bg-black mx-auto" />
           </RevealSection>
 
           <RevealSection>
@@ -321,13 +312,6 @@ export default function AiContentAutomationWebinar() {
                 ))}
               </div>
 
-              <div className="border-t border-gray-100 pt-6 mt-2 flex items-center gap-4">
-                <img src={speakerPhoto} alt="Григорий Черняев" className="w-14 h-14 rounded-full object-cover border-2 border-[#FECE33]" />
-                <div>
-                  <p className="font-black text-black">Григорий Черняев</p>
-                  <p className="text-gray-500 text-sm">CEO CIS, 24TTL</p>
-                </div>
-              </div>
             </div>
           </RevealSection>
         </div>
@@ -460,8 +444,9 @@ export default function AiContentAutomationWebinar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <RevealSection className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Участвуйте бесплатно —{' '}
-              <span className="text-[#FECE33]">14 апреля в 14:00</span>
+              Участвуйте бесплатно
+              <br />
+              <span className="text-[#FECE33]">— 14 апреля в 14:00</span>
             </h2>
             <div className="w-16 h-[3px] bg-[#FECE33] mx-auto mb-6" />
             <p className="text-white/70 text-lg">
