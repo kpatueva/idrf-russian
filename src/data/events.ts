@@ -35,7 +35,7 @@ export const events: EventData[] = [
     slug: 'ai-content-automation-webinar',
     title: 'Как брендам работать с Q-comm полкой в 2026',
     subtitle: 'Аналитика, тренды, исследования быстрой доставки в России',
-    date: '14 апреля 2026',
+    date: '16 апреля 2026',
     time: '14:00 - 15:00 МСК',
     location: 'Онлайн, бесплатно',
     format: 'webinar',

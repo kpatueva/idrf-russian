@@ -1,4 +1,4 @@
-import { CheckCircle, ArrowLeft, Mail } from 'lucide-react';
+import { CircleCheck as CheckCircle, ArrowLeft, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HeroBackground from '../../components/HeroBackground';
 
@@ -29,7 +29,7 @@ export default function WebinarThankYou() {
 
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10 max-w-md mx-auto">
           <p className="text-white/50 text-sm leading-relaxed">
-            Вебинар состоится <span className="text-white font-semibold">14 апреля 2026</span> в <span className="text-white font-semibold">14:00 МСК</span>.
+            Вебинар состоится <span className="text-white font-semibold">16 апреля 2026</span> в <span className="text-white font-semibold">14:00 МСК</span>.
             Ссылка на подключение будет отправлена на вашу почту.
           </p>
         </div>

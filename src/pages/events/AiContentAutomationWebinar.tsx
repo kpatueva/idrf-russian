@@ -1,19 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import {
-  Calendar,
-  Clock,
-  Monitor,
-  BarChart3,
-  Search,
-  ShoppingCart,
-  Gift,
-  TrendingUp,
-  Bell,
-  Eye,
-  Zap,
-  ExternalLink,
-  ArrowRight,
-} from 'lucide-react';
+import { Calendar, Clock, Monitor, ChartBar as BarChart3, Search, ShoppingCart, Gift, TrendingUp, Bell, Eye, Zap, ExternalLink, ArrowRight } from 'lucide-react';
 import RegistrationForm from '../../components/RegistrationForm';
 import { useNavigate } from 'react-router-dom';
 import HeroBackground from '../../components/HeroBackground';
@@ -96,7 +82,7 @@ export default function AiContentAutomationWebinar() {
               <div className="flex flex-wrap gap-5 mb-7 text-white/70 text-sm font-medium hero-entrance" style={{ animationDelay: '0.2s' }}>
                 <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-[#FECE33]" />
-                  14 апреля 2026
+                  16 апреля 2026
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-[#FECE33]" />
@@ -451,7 +437,7 @@ export default function AiContentAutomationWebinar() {
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
               Участвуйте бесплатно
               <br />
-              <span className="text-[#FECE33]">— 14 апреля в 14:00</span>
+              <span className="text-[#FECE33]">— 16 апреля в 14:00</span>
             </h2>
             <div className="w-16 h-[3px] bg-[#FECE33] mx-auto mb-6" />
             <p className="text-white/70 text-lg">
@@ -507,10 +493,10 @@ export default function AiContentAutomationWebinar() {
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
             <p className="text-white/80 text-sm font-medium hidden sm:block truncate">
               Как брендам работать с Q-comm полкой в 2026{' '}
-              <span className="text-white/40">· 14 апреля, 14:00 МСК</span>
+              <span className="text-white/40">· 16 апреля, 14:00 МСК</span>
             </p>
             <p className="text-white/80 text-xs font-medium sm:hidden truncate">
-              14 апреля · 14:00 МСК
+              16 апреля · 14:00 МСК
             </p>
             <a
               href="#register"
