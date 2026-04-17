@@ -43,7 +43,7 @@ export default function MeetupHero({ formRef }: MeetupHeroProps) {
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#FECE33]" />
-                9:30 -- 13:00 МСК
+                9:30 – 13:00 МСК
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#FECE33]" />
