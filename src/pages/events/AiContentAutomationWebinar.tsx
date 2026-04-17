@@ -111,7 +111,7 @@ export default function AiContentAutomationWebinar() {
                 variant="dark"
                 eventName="Q-comm Полка 2026 Webinar"
                 googleScriptEnvKey="VITE_GOOGLE_SCRIPT_WEBINAR_URL"
-                onSuccess={() => navigate('/events/ai-content-automation-webinar/thank-you')}
+                onSuccess={() => navigate('/events/meetup-thank-you')}
               />
             </div>
           </div>
@@ -473,7 +473,7 @@ export default function AiContentAutomationWebinar() {
                 variant="dark"
                 eventName="Q-comm Полка 2026 Webinar"
                 googleScriptEnvKey="VITE_GOOGLE_SCRIPT_WEBINAR_URL"
-                onSuccess={() => navigate('/events/ai-content-automation-webinar/thank-you')}
+                onSuccess={() => navigate('/events/meetup-thank-you')}
               />
               <p className="text-white/40 text-xs text-center mt-4">
                 Регистрация закроется накануне мероприятия
