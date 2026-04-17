@@ -58,7 +58,7 @@ export default function MeetupHero({ formRef }: MeetupHeroProps) {
               id="register"
               eventName="AI E-commerce Meetup 23 April 2026"
               googleScriptEnvKey="VITE_GOOGLE_SCRIPT_MEETUP_URL"
-              onSuccess={() => navigate('/events/digital-retail-analytics-meetup/thank-you')}
+              onSuccess={() => navigate('/events/meetup-thank-you')}
             />
           </div>
         </div>
