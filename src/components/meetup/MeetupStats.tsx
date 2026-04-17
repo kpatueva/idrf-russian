@@ -7,8 +7,8 @@ export default function MeetupStats() {
     <section className="py-12 bg-[#1A1A2E] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <RevealSection className="rounded-2xl bg-[#FECE33] border-2 border-[#1A1A2E] flex items-center justify-center overflow-hidden p-0">
-            <img src={idrfLogoFull} alt="IDRF" className="w-[3.7%] h-[3.7%] object-contain" />
+          <RevealSection className="rounded-2xl bg-[#FECE33] border-2 border-[#1A1A2E] flex items-center justify-center overflow-hidden p-6">
+            <img src={idrfLogoFull} alt="IDRF" className="w-1/3 h-auto object-contain" />
           </RevealSection>
 
           <RevealSection delay={100} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #4A1D6A, #2D1B4E)' }}>
