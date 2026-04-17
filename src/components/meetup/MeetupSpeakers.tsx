@@ -2,6 +2,7 @@ import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
 import speaker6Photo from '../../assets/Screenshot_at_Apr_08_16-46-54.png';
 import kiselevPhoto from '../../assets/Frame_1.png';
 import logo24TTL from '../../assets/24ttl_logo_new.png';
+import logoSportmaster from '../../assets/sportmaster-vertical-logo.png';
 import RevealSection from './RevealSection';
 
 interface Speaker {
@@ -32,6 +33,7 @@ const speakers: Speaker[] = [
     name: 'Роман Киселев',
     role: 'Директор стратегических проектов',
     company: 'Спортмастер',
+    logo: logoSportmaster,
   },
   {
     photo: '',
