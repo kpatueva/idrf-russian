@@ -39,7 +39,7 @@ export const events: EventData[] = [
     time: '14:00 - 15:00 МСК',
     location: 'Онлайн, бесплатно',
     format: 'webinar',
-    status: 'registration-open',
+    status: 'past',
     description: 'Аналитика, тренды и исследования быстрой доставки в России. Демо платформы 24SHELF и спецусловия для участников.',
     tags: ['Q-commerce', 'Аналитика', 'FMCG'],
   },

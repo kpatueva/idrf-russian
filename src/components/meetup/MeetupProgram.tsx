@@ -1,6 +1,7 @@
-import { AlertTriangle } from 'lucide-react';
+import { TriangleAlert as AlertTriangle } from 'lucide-react';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
 import speaker6Photo from '../../assets/Screenshot_at_Apr_08_16-46-54.png';
+import kiselevPhoto from '../../assets/Frame_1.png';
 import RevealSection from './RevealSection';
 
 interface ProgramEntry {
@@ -42,10 +43,11 @@ const program: ProgramEntry[] = [
   },
   {
     time: '11:00 - 11:20',
-    tag: 'Выступление',
-    tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
-    title: 'От эксперимента к масштабу: путь ИИ-проекта внутри крупной платформы',
-    speaker: { photo: '', name: 'Спикер уточняется', role: 'Маркетплейс' },
+    tag: 'Кейс-стади',
+    tagColor: 'bg-sky-500/15 text-sky-600 border border-sky-500/20',
+    title: 'AS IS, TO BE или от потенциала GEO к прибыли. Фреймворк будущего от Спортмастера',
+    desc: 'Как Спортмастер выстраивает стратегию перехода от текущего состояния к целевой модели — от потенциала GEO-аналитики к реальной прибыли.',
+    speaker: { photo: kiselevPhoto, name: 'Роман Киселев', role: 'Директор стратегических проектов, Спортмастер' },
   },
   {
     time: '11:30 - 11:50',
