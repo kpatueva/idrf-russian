@@ -354,7 +354,7 @@ export default function AiContentAutomationWebinar() {
                     </a>
                   </div>
                   <div className="text-gray-400 text-xs leading-relaxed">
-                    Клиенты: LG, Samsung, Yandex, Sber, STADA, AstraZeneca, Bayer, Colgate, Reckitt,
+                    Клиенты: LG, Samsung, Yandex, Sber, STADA, AstraZeneca, Bayer, Reckitt,
                     Heinz, SPLAT, Барьер, Gorenje, Groupe SEB, Xiaomi, Huawei, Midea, Polaris и другие бренды Fortune 500.
                   </div>
                 </div>
