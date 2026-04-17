@@ -60,7 +60,7 @@ export default function RegistrationForm({
           body: JSON.stringify(data),
         });
       }
-      e.currentTarget.reset();
+// e.currentTarget.reset();
       setPrivacyChecked(false);
       setConsentChecked(false);
       onSuccess();
