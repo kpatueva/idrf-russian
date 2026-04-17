@@ -1,4 +1,4 @@
-import { CheckCircle } from 'lucide-react';
+import { CircleCheck as CheckCircle } from 'lucide-react';
 import RevealSection from './RevealSection';
 
 const benefits = [
@@ -30,7 +30,7 @@ export default function MeetupBenefits() {
           </h2>
           <div className="w-16 h-[3px] bg-[#1A1A2E] mx-auto mb-6" />
           <p className="text-gray-600 text-lg leading-relaxed">
-            Практический митап без воды -- только реальный опыт и конкретные инструменты
+            Практический митап без воды – только реальный опыт и конкретные инструменты
           </p>
         </RevealSection>
 

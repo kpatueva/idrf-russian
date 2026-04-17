@@ -1,4 +1,4 @@
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CircleCheck as CheckCircle, ArrowRight } from 'lucide-react';
 import HeroBackground from '../HeroBackground';
 import RevealSection from './RevealSection';
 
@@ -20,7 +20,7 @@ export default function MeetupFinalCTA() {
             Готовы присоединиться?
           </h2>
           <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
-            Закрытый митап для профессионалов e-commerce. Места ограничены -- регистрируйтесь сейчас.
+            Закрытый митап для профессионалов e-commerce. Места ограничены – регистрируйтесь сейчас.
           </p>
         </RevealSection>
 

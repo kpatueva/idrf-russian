@@ -47,10 +47,10 @@ export default function DigitalRetailAnalyticsMeetup() {
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
             <p className="text-white/80 text-sm font-medium hidden sm:block truncate">
               ИИ в e-commerce: российская практика{' '}
-              <span className="text-white/40">-- 23 апреля, Rybakov Tower</span>
+              <span className="text-white/40">– 23 апреля, Rybakov Tower</span>
             </p>
             <p className="text-white/80 text-xs font-medium sm:hidden truncate">
-              23 апреля -- Москва
+              23 апреля – Москва
             </p>
             <a
               href="#register"

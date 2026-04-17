@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Clock, Shield, AlertTriangle } from 'lucide-react';
+import { MapPin, Calendar, Clock, Shield, TriangleAlert as AlertTriangle } from 'lucide-react';
 import venuePhoto from '../../assets/sok-rybakov-tauer.png';
 import RevealSection from './RevealSection';
 
@@ -37,7 +37,7 @@ export default function MeetupVenue() {
                   <Clock className="w-5 h-5 text-[#FECE33] flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-bold text-[#1A1A2E] text-sm">Время</p>
-                    <p className="text-gray-600 text-sm">9:30 -- 13:00 МСК</p>
+                    <p className="text-gray-600 text-sm">9:30 – 13:00 МСК</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
