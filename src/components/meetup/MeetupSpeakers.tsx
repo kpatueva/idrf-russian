@@ -77,7 +77,7 @@ export default function MeetupSpeakers() {
                   <p className="text-gray-500 text-sm mb-3">{speaker.role}</p>
                 )}
                 {speaker.logo && (
-                  <img src={speaker.logo} alt={speaker.company} className="h-7 object-contain mx-auto opacity-70" />
+                  <img src={speaker.logo} alt={speaker.company} className="h-7 object-contain mx-auto" />
                 )}
               </div>
             </RevealSection>
