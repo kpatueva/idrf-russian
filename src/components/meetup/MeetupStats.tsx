@@ -1,5 +1,4 @@
 import idrfLogoFull from '../../assets/idrf_logo-2.png';
-import logo24TTL from '../../assets/24ttl_logo_new.png';
 import RevealSection from './RevealSection';
 import CountUp from './CountUp';
 
@@ -8,18 +7,8 @@ export default function MeetupStats() {
     <section className="py-12 bg-[#1A1A2E] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <RevealSection className="rounded-2xl p-6 bg-[#FECE33] border-2 border-[#1A1A2E]">
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-3 flex-wrap">
-                <img src={idrfLogoFull} alt="IDRF" className="h-7 object-contain" />
-                <span className="text-[#1A1A2E]/40 font-bold text-sm">x</span>
-                <img src={logo24TTL} alt="24TTL" className="h-7 object-contain" />
-              </div>
-              <span className="inline-flex items-center gap-1.5">
-                <span className="text-[#1A1A2E] font-black text-sm">IDRF</span>
-                <span className="bg-white text-[#1A1A2E] text-xs font-bold px-2 py-0.5 rounded-full">С 2019</span>
-              </span>
-            </div>
+          <RevealSection className="rounded-2xl p-6 bg-[#FECE33] border-2 border-[#1A1A2E] flex items-center justify-center">
+            <img src={idrfLogoFull} alt="IDRF" className="h-10 object-contain" />
           </RevealSection>
 
           <RevealSection delay={100} className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #4A1D6A, #2D1B4E)' }}>
