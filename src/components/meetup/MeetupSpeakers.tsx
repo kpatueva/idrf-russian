@@ -51,9 +51,9 @@ export default function MeetupSpeakers() {
           </p>
         </RevealSection>
 
-        <div className="flex gap-6 overflow-x-auto pb-4 px-1 -mx-1 scrollbar-hide snap-x snap-mandatory">
+        <div className="flex flex-wrap justify-center gap-6 pb-4 px-1 -mx-1">
           {speakers.map((speaker, i) => (
-            <RevealSection key={i} delay={i * 100} className="snap-start flex-shrink-0 w-64">
+            <RevealSection key={i} delay={i * 100} className="w-64">
               <div className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:shadow-lg hover:border-[#FECE33] transition-all group h-full">
                 {speaker.photo ? (
                   <img

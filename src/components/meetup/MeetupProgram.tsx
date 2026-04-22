@@ -1,4 +1,3 @@
-import { TriangleAlert as AlertTriangle } from 'lucide-react';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
 import speaker6Photo from '../../assets/Screenshot_at_Apr_22_18-46-07.png';
 import kiselevPhoto from '../../assets/Frame_1.png';
@@ -118,14 +117,6 @@ export default function MeetupProgram() {
           ))}
         </div>
 
-        <RevealSection delay={600} className="max-w-3xl mx-auto mt-6">
-          <div className="bg-[#1A1A2E]/5 rounded-2xl p-5 border border-[#1A1A2E]/10 flex items-center gap-3">
-            <AlertTriangle className="w-5 h-5 text-[#1A1A2E]/60 flex-shrink-0" />
-            <p className="text-[#1A1A2E]/70 text-sm">
-              В программу могут вноситься изменения. Следите за обновлениями.
-            </p>
-          </div>
-        </RevealSection>
       </div>
     </section>
   );
