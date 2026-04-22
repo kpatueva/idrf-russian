@@ -35,12 +35,6 @@ const speakers: Speaker[] = [
     company: 'Спортмастер',
     logo: logoSportmaster,
   },
-  {
-    photo: '',
-    name: 'Спикер уточняется',
-    role: 'Бренд',
-    company: '',
-  },
 ];
 
 export default function MeetupSpeakers() {
