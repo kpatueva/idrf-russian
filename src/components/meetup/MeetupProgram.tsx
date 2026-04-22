@@ -39,7 +39,7 @@ const program: ProgramEntry[] = [
     tagColor: 'bg-sky-500/15 text-sky-600 border border-sky-500/20',
     title: 'Практика создания ИИ-сотрудников и цифровых отделов в e-commerce',
     desc: 'Обзор проектов автоматизации контента и бизнес-процессов на стороне ритейлеров и брендов',
-    speaker: { photo: speaker6Photo, name: 'Александр Астахов', role: 'AI Lead, 24TTL' },
+    speaker: { photo: speaker6Photo, name: 'Александр Ильинов', role: 'Head of Sales, 24TTL' },
   },
   {
     time: '11:00 - 11:20',
@@ -51,10 +51,9 @@ const program: ProgramEntry[] = [
   },
   {
     time: '11:30 - 11:50',
-    tag: 'Выступление',
+    tag: 'Панельная дискуссия',
     tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
-    title: 'Автоматизация без потери контроля: ИИ в маркетинге бренда',
-    speaker: { photo: '', name: 'Спикер уточняется', role: 'Бренд' },
+    title: 'E-commerce без иллюзий: что продаёт в 2026',
   },
   {
     time: '12:00 - 13:00',
