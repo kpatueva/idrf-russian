@@ -1,6 +1,6 @@
 import { TriangleAlert as AlertTriangle } from 'lucide-react';
 import speakerPhoto from '../../assets/2026-01-29_07.21.09.jpg';
-import speaker6Photo from '../../assets/Screenshot_at_Apr_08_16-46-54.png';
+import speaker6Photo from '../../assets/Screenshot_at_Apr_22_18-46-07.png';
 import kiselevPhoto from '../../assets/Frame_1.png';
 import RevealSection from './RevealSection';
 
@@ -54,6 +54,7 @@ const program: ProgramEntry[] = [
     tag: 'Панельная дискуссия',
     tagColor: 'bg-teal-500/15 text-teal-600 border border-teal-500/20',
     title: 'E-commerce без иллюзий: что продаёт в 2026',
+    desc: 'От спроса до карточки товара: где на самом деле формируется рост продаж',
   },
   {
     time: '12:00 - 13:00',
