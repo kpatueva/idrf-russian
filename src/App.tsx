@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import AgenticCommerceForum from './pages/events/AgenticCommerceForum';
 import AiContentAutomationWebinar from './pages/events/AiContentAutomationWebinar';
 import DigitalRetailAnalyticsMeetup from './pages/events/DigitalRetailAnalyticsMeetup';
+import BestPracticesEcommerceMeetup from './pages/events/BestPracticesEcommerceMeetup';
 import MeetupThankYou from './pages/events/MeetupThankYou';
 import WebinarThankYou from './pages/events/WebinarThankYou';
 
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/events/agentic-commerce-forum" element={<AgenticCommerceForum />} />
           <Route path="/events/ai-content-automation-webinar" element={<AiContentAutomationWebinar />} />
           <Route path="/events/digital-retail-analytics-meetup" element={<DigitalRetailAnalyticsMeetup />} />
+          <Route path="/events/best-practices-ecommerce-ai-meetup" element={<BestPracticesEcommerceMeetup />} />
           <Route path="/events/meetup-thank-you" element={<MeetupThankYou />} />
           <Route path="/events/webinar-thank-you" element={<WebinarThankYou />} />
         </Route>

@@ -52,9 +52,22 @@ export const events: EventData[] = [
     time: '9:30 - 13:00 МСК',
     location: 'Москва, SOK Rybakov Tower',
     format: 'meetup',
-    status: 'registration-open',
+    status: 'past',
     description: 'Кейсы компаний, инструменты, перспективы. Закрытый митап для профессионалов e-commerce.',
     tags: ['AI', 'E-commerce', 'Кейсы'],
+  },
+  {
+    id: '4',
+    slug: 'best-practices-ecommerce-ai-meetup',
+    title: 'Лучшие практики в e-commerce: как ИИ и технологии меняют правила игры',
+    subtitle: 'Закрытый митап для профессионалов e-commerce',
+    date: '21 мая 2026',
+    time: '9:30 - 13:00 МСК',
+    location: 'Москва, SOK Rybakov Tower',
+    format: 'meetup',
+    status: 'registration-open',
+    description: 'Лучшие практики внедрения ИИ и технологий в e-commerce. Реальные кейсы, инструменты и нетворкинг.',
+    tags: ['AI', 'E-commerce', 'Практики'],
   },
 ];
 
